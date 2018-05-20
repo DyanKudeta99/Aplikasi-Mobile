@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox3"
+        android:text="Spido Meter"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="28dp"
+        tools:text="Spido Meter"
+        android:onClick="pilihItem"/>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox"
+        android:text="Rantai"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="60dp"
+        tools:text="Rantai"
+        android:onClick="pilihItem"/>
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox7"
+        android:layout_alignTop="@+id/checkBox10"
+        android:text="Riting"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="92dp"
+        tools:text="Riting"
+        android:onClick="pilihItem"/>
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox5"
+        android:layout_alignParentStart="true"
+        android:text="Seker"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="124dp"
+        tools:text="Seker"
+        android:onClick="pilihItem"/>
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/checkBox6"
+        android:text="Skring"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="156dp"
+        tools:text="Skring"
+        android:onClick="pilihItem"/>
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/checkBox7"
+        android:text="Kampas Rem"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="28dp"
+        tools:text="Kampas Rem"
+        android:onClick="pilihItem"/>
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox8"
+        android:layout_below="@+id/checkBox8"
+        android:text="Fanbel"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="60dp"
+        tools:text="Fanbel"
+        android:onClick="pilihItem"/>
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox9"
+        android:layout_below="@+id/checkBox"
+        android:text="Knalpot"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="92dp"
+        tools:text="Knalpot"
+        android:onClick="pilihItem"/>
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="42dp"
+        android:text="Klaker"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="124dp"
+        tools:text="Klaker"
+        android:onClick="pilihItem"/>
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Shock"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="156dp"
+        tools:text="Shock"
+        android:onClick="pilihItem"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="123dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="82dp"
+        android:text="OK"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="371dp"
+        tools:text="OK"
+        android:onClick="donePilih"/>
+
+</LinearLayout>
