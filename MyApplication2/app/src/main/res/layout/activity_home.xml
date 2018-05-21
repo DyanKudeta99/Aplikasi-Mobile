@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#fcfcfc"
+    android:gravity="center"
+    android:id="@+id/ll"
+    android:src="@+id/drawer_layout">
+
+
+
+    <LinearLayout
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:id="@+id/chatRoom_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/cerclebackgroundpurple"
+                    android:src="@drawable/ic_chat"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="ChatRoom"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Silahkan Masukan Keluhan Anda"
+                    android:padding="5dp"
+                    android:textColor="@android:color/darker_gray"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/sparepart_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/cerclebackgroundpurple"
+                    android:src="@drawable/ic_bike"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Sparepart"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Silahkan Pilih Sparepart Kebutuhan Anda Disini"
+                    android:padding="5dp"
+                    android:textColor="@android:color/darker_gray"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:id="@+id/service_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/cerclebackgroundpurple"
+                    android:src="@drawable/ic_settings"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Service"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Silahkan Pilih Layanan Service Anda Disini"
+                    android:padding="5dp"
+                    android:textColor="@android:color/darker_gray"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/emergency_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/cerclebackgroundpurple"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_emergency" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Emergency"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Silahkan Beritahu Kami Kondisi Kendaraan Anda"
+                    android:textColor="@android:color/darker_gray" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>
