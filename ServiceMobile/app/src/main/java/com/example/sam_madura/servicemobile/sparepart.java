@@ -1,5 +1,6 @@
 package com.example.sam_madura.servicemobile;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -78,10 +79,15 @@ public class sparepart extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id==R.id.action_settings){
+
             //do your functionality here
             return true;
-        }
-        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(sparepart.this, Home.class);
+        startActivity(intent);
+        finish();
     }
 }

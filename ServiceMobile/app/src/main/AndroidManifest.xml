@@ -26,7 +26,11 @@
         <activity
             android:name=".Home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".NewActivityListView"></activity>
+        <activity android:name=".NewActivityListView" />
+        <activity
+            android:name=".ActivityTab"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

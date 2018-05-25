@@ -1,5 +1,6 @@
 package com.example.sam_madura.servicemobile;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -35,13 +36,11 @@ public class ActivityNavigation extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
+        Intent intent = new Intent(ActivityNavigation.this, ActivityTab.class);
+        startActivity(intent);
+        finish();
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -58,11 +57,7 @@ public class ActivityNavigation extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
             return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -72,14 +67,15 @@ public class ActivityNavigation extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_person) {
-            // Handle the camera action
         } else if (id == R.id.nav_help) {
-
-        } else if (id == R.id.nav_settings) {
+            Intent intent = new Intent(ActivityNavigation.this, ActivityTab.class);
+            startActivity(intent);
+            finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }

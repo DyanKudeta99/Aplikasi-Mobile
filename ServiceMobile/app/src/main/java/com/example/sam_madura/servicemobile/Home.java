@@ -16,17 +16,12 @@ public class Home extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         //definisi card
+
         sparepartCard = (CardView) findViewById(R.id.sparepart_card);
         serviceCard = (CardView) findViewById(R.id.service_card);
         emergencyCard = (CardView) findViewById(R.id.emergency_card);
-        //onclick
-        sparepartCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Home.this, ActivityNavigation.class);
-                startActivity(intent);
-            }
-        });
+
+        sparepartCard.setOnClickListener(this);
         serviceCard.setOnClickListener(this);
         emergencyCard.setOnClickListener(this);
 
@@ -39,10 +34,20 @@ public class Home extends AppCompatActivity implements View.OnClickListener{
         Intent i;
 
         switch (view.getId()) {
-            case R.id.sparepart_card: i = new Intent(this, sparepart.class); startActivity(i); break;
-            case R.id.service_card: i = new Intent(this, service.class); startActivity(i); break;
-            case R.id.emergency_card: i = new Intent(this, emergency.class); startActivity(i); break;
-            default: break;
+            case R.id.sparepart_card:
+                i = new Intent(Home.this, sparepart.class);
+                startActivity(i);
+                break;
+            case R.id.service_card:
+                i = new Intent(Home.this, service.class);
+                startActivity(i);
+                break;
+            case R.id.emergency_card:
+                i = new Intent(Home.this, emergency.class);
+            startActivity(i);
+                break;
+            default:
+                break;
         }
     }
 }
