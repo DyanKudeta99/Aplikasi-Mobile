@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/information"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="354dp"
+        android:layout_height="174dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Gratis 1x Service setiap 5x Service atau setiap 10x Ganti Oli, Gratis Soft Drink, Gratis Antar Jemput,
+        Gratis Konsultasi Mesin, Gratis Wifi, Gratis Cuci Motor, Gratis Stel (Rem, Lampu, Angin, dll)"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="63dp"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
