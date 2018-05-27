@@ -1,13 +1,13 @@
 <?php
-class Model_mekanik extends CI_Model {
+class M_sparepart extends CI_Model {
 	public function get($id = null){
 		$this->db->select('*');
-		$this->db->from('mekanik');
+		$this->db->from('sparepart');
 		if($id != null){
-			$this->db->where('Id_mekanik', $id);
+			$this->db->where('Kode_sparepart', $id);
 		}
 		$query = $this->db->get();
 		return $query;
-		}
 	}
+}
 ?>

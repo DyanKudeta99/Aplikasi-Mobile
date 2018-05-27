@@ -3,17 +3,15 @@
 		table.data {
 		border-collapse: collapse;
 	}
-	table.data th, table.data td {
-		padding: 5px;
+	table{
+		margin : -340px 8px 0 460px;
 	}
-		body{
-	background: url(assets/images/honda.jpg);
-}
+	table.data th, table.data td {
+		padding: 10px;
+	}
 </style>
-			<p><h3 align="center">Daftar User</h3></p>
-			<p align="center">
-				<table class="data" border="1">
-				<tr>
+				<table class="data" border="3" align="center">
+				<tr style="background-color: red; color: white;">
 					<th>Id User</th>
 					<th>Foto</th>
 					<th>Nama User</th>
@@ -23,10 +21,9 @@
 					<th>Alamat</th>
 				</tr>
 				<?php
-				$no= 1 ;
 				foreach ($user as $b => $row) { ?>
 				<tr>
-					<td><?=$no++;?></td>
+					<td><?=$row->Id_user;?></td>
 					<td><?=$row->Foto;?></td>
 					<td><?=$row->Nama_user;?></td>
 					<td><?=$row->Email;?></td>
