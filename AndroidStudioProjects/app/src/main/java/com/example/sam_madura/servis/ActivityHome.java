@@ -37,15 +37,19 @@ private CardView pemesananCard, serfisCard, sparepartCard, infoCard;
         switch (view.getId()){
             case R.id.pemesanan_card : intent = new Intent(this,Pemesanan.class);
             startActivity(intent);
+            finish();
             break;
             case R.id.serfis_card : intent = new Intent(this,Serfis.class);
             startActivity(intent);
+            finish();
             break;
             case R.id.sperpart_card : intent = new Intent(this,Sperpart.class);
             startActivity(intent);
+            finish();
             break;
             case R.id.info_card : intent = new Intent(this,ActivityTab.class);
             startActivity(intent);
+            finish();
             break;
             default:break;
         }

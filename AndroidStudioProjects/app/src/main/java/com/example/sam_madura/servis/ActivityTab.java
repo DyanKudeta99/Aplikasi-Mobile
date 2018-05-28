@@ -86,14 +86,20 @@ public class ActivityTab extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.home) {
             Intent intent = new Intent(ActivityTab.this, ActivityHome.class);
             startActivity(intent);
-            return true;
+            finish();
         }
-
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(ActivityTab.this, ActivityHome.class);
+        startActivity(intent);
+    }
+
 
     /**
      * A placeholder fragment containing a simple view.
