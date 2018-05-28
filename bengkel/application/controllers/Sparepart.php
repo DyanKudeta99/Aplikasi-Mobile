@@ -1,19 +1,19 @@
 <?php
-class User extends CI_Controller{
+class Sparepart extends CI_Controller{
 	function __construct(){
 		parent::__construct();
 		$this->load->helper(array('url'));
 	}
 	public function index()
 	{
-		$this->load->model('M_user');
-		$query = $this->M_user->get();
+		$this->load->model('m_sparepart');
+		$query = $this->m_sparepart->get();
 		$data= array(
 				'template' => 'Tampil data sparepart',
-				'user' => $query->result(),
+				'sparepart' => $query->result(),
 		);
 		$this->load->view('template', $data);
-		$this->load->view('view_user');
+		$this->load->view('v_sparepart');
 		}
 	}
 ?>

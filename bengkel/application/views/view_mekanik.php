@@ -1,32 +1,30 @@
-<html>
-	<head>
-		<title>Tabel Mekanik</title>
+<title><?=$template; ?></title>
 		<style type="text/css">
-		body{
-	background: url(assets/images/honda.jpg);
+				table.data {
+		border-collapse: collapse;
+		align: center;
 	}
-		</style>
-	</head>
-	<body>
-		<p><h3 align="center">Daftar Mekanik</h3></p>
-		<p align="center">
-			<table border="1">
-				<tr>
-					<th>id_mekanik</th>
-					<th>nama_mekanik</th>
+	table{
+		width: 20%;
+		margin : -340px 8px 0 630px;
+	}
+	table.data th, table.data td {
+		padding: 10px;
+		align: center;
+	}
+</style>
+			<table class="data" border="3">
+				<tr style="background-color: red; color: white;">
+					<th>Id mekanik</th>
+					<th>Nama mekanik</th>
 				</tr>
 				<?php
-                foreach ($data->result_array() as $i):
-						$id_mekanik=$i['id_mekanik'];
-						$nama_mekanik=$i['nama_mekanik']
-				?>
+				foreach ($mekanik as $b => $row) { ?>
 				<tr>
-					<td><?php echo $id_mekanik;?></td>
-					<td><?php echo $nama_mekanik;?></td>
+					<td><?=$row->id_mekanik?></td>
+					<td><?=$row->nama_mekanik?></td>
 				</tr>
-				<?php endforeach;
-				?>
-			</table>
+			<?php
+			} ?>
+		</table>
 		</p>
-	</body>
-</html>

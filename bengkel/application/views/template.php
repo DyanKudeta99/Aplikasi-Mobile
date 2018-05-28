@@ -274,7 +274,7 @@
 
 						<ul class="submenu">
 							<li class="active">
-								<a href="tables.html">
+								<a href="<?=site_url('mekanik');?>">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Mekanik
 								</a>
@@ -283,7 +283,7 @@
 							</li>
 
 							<li class="">
-								<a href="jqgrid.html">
+								<a href="<?=site_url('user');?>">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Customer
 								</a>
@@ -291,7 +291,7 @@
 								<b class="arrow"></b>
 							</li>
 							<li class="">
-								<a href="jqgrid.html">
+								<a href="<?=site_url('sparepart');?>">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Sparepart
 								</a>
@@ -353,7 +353,16 @@
 						</div><!-- /.nav-search -->
 					</div>
 
-					<!-- /.page-content -->
+					<div class="content-home-1-right-image">
+      <!--<a href="budidaya-padi-organik-metode-sri/berita/kambing-boerka-silangan-baru-kambing-kacang/index.html"><img width="300" height="169" src="wp-content/uploads/kambing-boerka-300x169.jpg" class="content-home-1-right-thumb wp-post-image" alt="Kambing Boerka" srcset="https://alamtani.com/wp-content/uploads/kambing-boerka-300x169.jpg 300w, https://alamtani.com/wp-content/uploads/kambing-boerka-300x169.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a>-->
+        <div class="content-home-1-right-text">
+        <a href="<?=site_url('mekanik');?>">
+          <!--<h3>Kilasan</h3>-->
+         <!-- <h2>Kambing Boerka, silangan baru kambing kacang</h2>-->
+        </a>
+        </div>
+    </div>
+					
 				</div>
 			</div><!-- /.main-content -->
 
