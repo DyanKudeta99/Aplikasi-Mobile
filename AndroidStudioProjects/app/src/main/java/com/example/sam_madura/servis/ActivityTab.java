@@ -86,7 +86,7 @@ public class ActivityTab extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.home) {
+        if (id == android.R.id.home) {
             Intent intent = new Intent(ActivityTab.this, ActivityHome.class);
             startActivity(intent);
             finish();
