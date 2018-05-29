@@ -19,6 +19,7 @@
         app:layout_constraintTop_toTopOf="@+id/constraintLayout"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -28,14 +29,14 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/cerclebackground"
-            android:src="@drawable/sparepart"
+            android:src="@drawable/pesan_antrian"
             android:padding="10dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
-            android:text="SPERPART"/>
+            android:text="PAKET SERVICE"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -45,7 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Pemesanan Sperpart"
+            android:text="Paket perawatan sesuai dengan kebutuhan sepeda motor"
             android:padding="1dp"
             android:textColor="@android:color/darker_gray"/>
 
