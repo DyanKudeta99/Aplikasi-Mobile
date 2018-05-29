@@ -19,13 +19,14 @@
         <activity android:name=".Pemesanan" />
         <activity android:name=".Sperpart" />
         <activity
-            android:name=".ActivityTab"
+            android:name=".ActivityTabInfo"
             android:label="@string/title_activity_tab"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ActivityTabServis"
             android:label="@string/title_activity_tab_servis"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Profil"></activity>
     </application>
 
 </manifest>

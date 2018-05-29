@@ -5,6 +5,7 @@ import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
@@ -29,12 +30,13 @@ private CardView pemesananCard, serfisCard, sparepartCard, infoCard;
         serfisCard.setOnClickListener(this);
         sparepartCard.setOnClickListener(this);
         infoCard.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View view) {
+        //untuk proses activity
         Intent intent;
-
         switch (view.getId()){
             case R.id.pemesanan_card : intent = new Intent(this,Pemesanan.class);
             startActivity(intent);
@@ -45,7 +47,7 @@ private CardView pemesananCard, serfisCard, sparepartCard, infoCard;
             case R.id.sperpart_card : intent = new Intent(this,Sperpart.class);
             startActivity(intent);
             break;
-            case R.id.info_card : intent = new Intent(this,ActivityTab.class);
+            case R.id.info_card : intent = new Intent(this,ActivityTabInfo.class);
             startActivity(intent);
             finish();
             break;
@@ -54,10 +56,20 @@ private CardView pemesananCard, serfisCard, sparepartCard, infoCard;
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // untuk mengambil activity di menu, seperti profil
+        getMenuInflater().inflate(R.menu.menu_activity_tab, menu);
+        return true;
+    }
+
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        //untuk bisa ngclick dan menu clas yg dituju
         int id = item.getItemId();
-        if (id== R.menu.menu_activity_tab){
-            return true;
+        if (id== R.id.profil){
+            Intent intent = new Intent(ActivityHome.this, Profil.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }
