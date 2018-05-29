@@ -5,6 +5,7 @@ import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -37,15 +38,12 @@ private CardView pemesananCard, serfisCard, sparepartCard, infoCard;
         switch (view.getId()){
             case R.id.pemesanan_card : intent = new Intent(this,Pemesanan.class);
             startActivity(intent);
-            finish();
             break;
-            case R.id.serfis_card : intent = new Intent(this,Serfis.class);
+            case R.id.serfis_card : intent = new Intent(this,ActivityTabServis.class);
             startActivity(intent);
-            finish();
             break;
             case R.id.sperpart_card : intent = new Intent(this,Sperpart.class);
             startActivity(intent);
-            finish();
             break;
             case R.id.info_card : intent = new Intent(this,ActivityTab.class);
             startActivity(intent);
@@ -54,6 +52,16 @@ private CardView pemesananCard, serfisCard, sparepartCard, infoCard;
             default:break;
         }
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id== R.menu.menu_activity_tab){
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     @Override
     public void onBackPressed() {
         if (!userPressedBackAgain) {

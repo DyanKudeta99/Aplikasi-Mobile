@@ -18,10 +18,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.widget.ListView;
 import android.widget.TextView;
 
-public class ActivityTab extends AppCompatActivity {
+public class ActivityTabServis extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -41,7 +40,7 @@ public class ActivityTab extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tab);
+        setContentView(R.layout.activity_tab_servis);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -60,19 +59,19 @@ public class ActivityTab extends AppCompatActivity {
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_activity_tab, menu);
+        getMenuInflater().inflate(R.menu.menu_activity_tab_servis, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        //tombolBack
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
@@ -80,20 +79,14 @@ public class ActivityTab extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == android.R.id.home) {
-            Intent intent = new Intent(ActivityTab.this, ActivityHome.class);
+            Intent intent = new Intent(this, ActivityHome.class);
             startActivity(intent);
             finish();
+            return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
-
-    @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(ActivityTab.this, ActivityHome.class);
-        startActivity(intent);
-        finish();
-    }
-
 
     /**
      * A placeholder fragment containing a simple view.
@@ -127,7 +120,13 @@ public class ActivityTab extends AppCompatActivity {
             switch (getArguments().getInt(ARG_SECTION_NUMBER))
             {
                 case 1:
-                    rootView = inflater.inflate(R.layout.fragment_activity_tab, container, false);
+                    rootView = inflater.inflate(R.layout.fragment_activity_tab_servis, container, false);
+                    break;
+                case 2:
+                    rootView = inflater.inflate(R.layout.fragment_activity_tab_servis2, container, false);
+                    break;
+                case 3:
+                    rootView = inflater.inflate(R.layout.fragment_activity_tab_servis3, container, false);
                     break;
             }
             return rootView;

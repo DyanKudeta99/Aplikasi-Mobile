@@ -17,11 +17,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".Pemesanan" />
-        <activity android:name=".Serfis" />
         <activity android:name=".Sperpart" />
         <activity
             android:name=".ActivityTab"
             android:label="@string/title_activity_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityTabServis"
+            android:label="@string/title_activity_tab_servis"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
