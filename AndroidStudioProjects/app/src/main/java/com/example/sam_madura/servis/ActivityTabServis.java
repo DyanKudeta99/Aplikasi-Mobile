@@ -60,7 +60,7 @@ ImageView gambar;
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        
+
 
     }
 
