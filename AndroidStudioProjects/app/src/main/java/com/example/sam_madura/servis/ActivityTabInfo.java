@@ -115,6 +115,12 @@ public class ActivityTabInfo extends AppCompatActivity {
             switch (getArguments().getInt(ARG_SECTION_NUMBER))
             {
                 case 1:
+                    rootView = inflater.inflate(R.layout.fragment_activity_tabservice, container, false);
+                    break;
+                case 2:
+                    rootView = inflater.inflate(R.layout.fragment_activity_tabsparepart, container, false);
+                    break;
+                case 3:
                     rootView = inflater.inflate(R.layout.fragment_activity_tabinfo, container, false);
                     break;
             }

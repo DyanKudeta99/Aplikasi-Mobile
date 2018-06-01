@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Pemesanan" />
+        <activity
+            android:name=".Pemesanan"
+            android:label="Pemesanan Nomor Antrian" />
         <activity android:name=".Sperpart" />
         <activity
             android:name=".ActivityTabInfo"
@@ -27,7 +29,10 @@
             android:label="@string/title_activity_tab_servis"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Profil" />
-        <activity android:name=".ActivityServiceTuneUp"></activity>
+        <activity android:name=".ActivityServiceTuneUp" />
+        <activity android:name=".ActivityListView"
+            android:parentActivityName=".Sperpart">
+        </activity>
     </application>
 
 </manifest>
