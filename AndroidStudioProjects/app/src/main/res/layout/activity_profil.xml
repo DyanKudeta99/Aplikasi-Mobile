@@ -1,106 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".Profil">
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="11dp"
         android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="PROFIL :"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:gravity="center_vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nama"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#de000000" />
+
+        <EditText
+            android:id="@+id/nama1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:clickable="false"
+            android:enabled="false"
+            android:hint="Nama Anda"
+            android:textColor="@drawable/edit_text1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Username"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/username2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:enabled="false"
+            android:hint="Username Anda"
+            android:textColor="@drawable/edit_text1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Email"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/email2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:enabled="false"
+            android:hint="Email Anda"
+            android:textColor="@drawable/edit_text1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Telp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/noHP2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:enabled="false"
+            android:hint="No HP"
+            android:inputType="none"
+            android:textColor="@drawable/edit_text1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="76dp"
-        android:orientation="vertical"
-        android:layout_alignParentLeft="true">
-
+        android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/Profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Alamat"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/alamat2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:enabled="false"
+            android:gravity="top"
+            android:hint="Alamat Anda"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:textColor="@drawable/edit_text1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ubah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
-            android:text="PROFILE"
-            android:textColor="@color/hitam"
-            android:textSize="18dip"
-            android:textStyle="bold" />
+            android:text="Ubah"
+            android:textColor="@color/putih"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:onClick="ubah"
+            android:background="@color/colorPrimary"/>
 
-        <View
-            android:id="@+id/View1"
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:layout_gravity="center"
-            android:background="#448AFF" />
-
-        <TextView
-            android:id="@+id/txt_nama"
+        <Button
+            android:id="@+id/btn_simpan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="16dp"
-            android:textColor="@color/hitam"
-            android:text="Nama" />
 
-        <TextView
-            android:id="@+id/txt_username"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="16dp"
-            android:textColor="@color/hitam"
-            android:text="Username" />
+            android:text="Simpan"
+            android:onClick="simpan"
+            android:textColor="@drawable/edit_text2"
+            android:enabled="false"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/colorPrimary"/>
 
-        <TextView
-            android:id="@+id/txt_email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="16dp"
-            android:textColor="@color/hitam"
-            android:text="Email" />
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/txt_alamat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="16dp"
-            android:textColor="@color/hitam"
-            android:text="Alamat" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/txt_noHP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="16dp"
-            android:textColor="@color/hitam"
-            android:text="Telp" />
 
         <Button
             android:id="@+id/btn_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:background="#448AFF"
             android:text="Logout"
+            android:onClick="logout"
             android:textColor="@color/putih"
-            android:textStyle="bold" />
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/colorPrimary"/>
 
     </LinearLayout>
 
-</RelativeLayout>
+
+
+
+</LinearLayout>

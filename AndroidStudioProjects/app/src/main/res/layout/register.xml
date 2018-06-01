@@ -115,7 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:background="#448AFF"
-            android:text="Daftar"
+            android:text="Register"
             android:textColor="@color/putih"
             android:textStyle="bold" />
 

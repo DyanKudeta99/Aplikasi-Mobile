@@ -91,7 +91,7 @@ public class login extends AppCompatActivity {
 
 
         if (session) {
-            Intent intent = new Intent(login.this, Profil.class);
+            Intent intent = new Intent(login.this, ActivityHome.class);
             intent.putExtra(TAG_ID, nama);
             intent.putExtra(TAG_USERNAME, username);
             intent.putExtra(TAG_EMAIL, email);
