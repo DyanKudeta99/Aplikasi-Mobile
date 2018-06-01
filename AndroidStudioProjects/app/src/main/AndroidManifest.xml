@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sam_madura.servis">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
+        android:name=".controler.AppController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,15 +14,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ActivityHome">
+        </activity>
+        <activity android:name=".login"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".Pemesanan"
             android:label="Pemesanan Nomor Antrian" />
+=======
+<activity android:name=".Register"
+    android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Pemesanan" />
+>>>>>>> 26654314a55032717684cf45bc98b427490f0578
         <activity android:name=".Sperpart" />
         <activity
             android:name=".ActivityTabInfo"
@@ -28,11 +41,16 @@
             android:name=".ActivityTabServis"
             android:label="@string/title_activity_tab_servis"
             android:theme="@style/AppTheme.NoActionBar" />
+<<<<<<< HEAD
         <activity android:name=".Profil" />
         <activity android:name=".ActivityServiceTuneUp" />
         <activity android:name=".ActivityListView"
             android:parentActivityName=".Sperpart">
         </activity>
+=======
+        <activity android:name=".Profil"/>
+        <activity android:name=".ActivityServiceTuneUp"></activity>
+>>>>>>> 26654314a55032717684cf45bc98b427490f0578
     </application>
 
 </manifest>
