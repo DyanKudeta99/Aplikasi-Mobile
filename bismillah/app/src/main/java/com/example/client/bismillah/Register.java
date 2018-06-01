@@ -26,7 +26,11 @@ public class Register extends AppCompatActivity {
 
     ProgressDialog pDialog;
     Button btn_register, btn_login;
+<<<<<<< HEAD
     EditText txt_nama,txt_username, txt_password,txt_confirm_password,txt_noHP,txt_alamat, txt_email;
+=======
+    EditText txt_nama,txt_username, txt_password,txt_confirm_password,txt_noHP,txt_alamat;
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
 
     Intent intent;
 
@@ -63,7 +67,10 @@ public class Register extends AppCompatActivity {
         txt_confirm_password = (EditText) findViewById(R.id.txt_confirm_password);
         txt_noHP = (EditText) findViewById(R.id.txt_noHP);
         txt_alamat = (EditText) findViewById(R.id.txt_alamat);
+<<<<<<< HEAD
         txt_email = (EditText) findViewById(R.id.txt_email);
+=======
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
 
 
 
@@ -90,13 +97,20 @@ public class Register extends AppCompatActivity {
                 String confirm_password = txt_confirm_password.getText().toString();
                 String noHp = txt_noHP.getText().toString();
                 String alamat = txt_alamat.getText().toString();
+<<<<<<< HEAD
                 String email = txt_email.getText().toString();
+=======
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
 
 
                 if (conMgr.getActiveNetworkInfo() != null
                         && conMgr.getActiveNetworkInfo().isAvailable()
                         && conMgr.getActiveNetworkInfo().isConnected()) {
+<<<<<<< HEAD
                     checkRegister(nama,username, password, confirm_password,noHp,alamat,email);
+=======
+                    checkRegister(nama,username, password, confirm_password,noHp,alamat);
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
                 } else {
                     Toast.makeText(getApplicationContext(), "No Internet Connection", Toast.LENGTH_SHORT).show();
                 }
@@ -107,7 +121,11 @@ public class Register extends AppCompatActivity {
 
 
 
+<<<<<<< HEAD
     private void checkRegister(final String nama,final String username, final String password, final String confirm_password,final String noHP,final String alamat,final String email) {
+=======
+    private void checkRegister(final String nama,final String username, final String password, final String confirm_password,final String noHP,final String alamat) {
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
         pDialog = new ProgressDialog(this);
         pDialog.setCancelable(false);
         pDialog.setMessage("Register ...");
@@ -138,7 +156,10 @@ public class Register extends AppCompatActivity {
                         txt_confirm_password.setText("");
                         txt_noHP.setText("");
                         txt_alamat.setText("");
+<<<<<<< HEAD
                         txt_email.setText("");
+=======
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
 
                     } else {
                         Toast.makeText(getApplicationContext(),
@@ -176,7 +197,10 @@ public class Register extends AppCompatActivity {
                 params.put("confirm_password", confirm_password);
                 params.put("noHP", noHP);
                 params.put("alamat", alamat);
+<<<<<<< HEAD
                 params.put("email", email);
+=======
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
 
 
                 return params;

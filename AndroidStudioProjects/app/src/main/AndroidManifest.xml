@@ -23,10 +23,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+        <activity
+            android:name=".Pemesanan"
+            android:label="Pemesanan Nomor Antrian" />
+=======
 <activity android:name=".Register"
     android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Profil"/>
         <activity android:name=".Pemesanan" />
+>>>>>>> 26654314a55032717684cf45bc98b427490f0578
         <activity android:name=".Sperpart" />
         <activity
             android:name=".ActivityTabInfo"
@@ -36,7 +42,19 @@
             android:name=".ActivityTabServis"
             android:label="@string/title_activity_tab_servis"
             android:theme="@style/AppTheme.NoActionBar" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <activity android:name=".Profil" />
+        <activity android:name=".ActivityServiceTuneUp" />
+        <activity android:name=".ActivityListView"
+            android:parentActivityName=".Sperpart">
+        </activity>
+=======
+        <activity android:name=".Profil"/>
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
         <activity android:name=".ActivityServiceTuneUp"></activity>
+>>>>>>> 26654314a55032717684cf45bc98b427490f0578
     </application>
 
 </manifest>

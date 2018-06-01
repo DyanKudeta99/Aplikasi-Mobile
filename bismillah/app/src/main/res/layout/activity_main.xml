@@ -15,19 +15,32 @@
 
         <ImageView
             android:id="@+id/logo"
+<<<<<<< HEAD
             android:layout_width="50dp"
             android:layout_height="50dp"
+=======
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
             android:layout_gravity="center"
             android:background="@mipmap/ic_launcher" />
 
         <TextView
+<<<<<<< HEAD
             android:id="@+id/Profile"
+=======
+            android:id="@+id/TextView1"
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
+<<<<<<< HEAD
             android:text="Profile"
+=======
+            android:text="Welcome Page"
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
             android:textSize="18dip"
             android:textStyle="bold" />
 
@@ -39,12 +52,20 @@
             android:background="#448AFF" />
 
         <TextView
+<<<<<<< HEAD
             android:id="@+id/txt_nama"
+=======
+            android:id="@+id/txt_id"
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
+<<<<<<< HEAD
             android:text="Nama" />
+=======
+            android:text="ID"/>
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
 
         <TextView
             android:id="@+id/txt_username"
@@ -52,6 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
+<<<<<<< HEAD
             android:text="Username" />
 
         <TextView
@@ -77,6 +99,9 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:text="Telp" />
+=======
+            android:text="Username"/>
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
 
         <Button
             android:id="@+id/btn_logout"

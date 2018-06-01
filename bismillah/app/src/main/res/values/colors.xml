@@ -4,6 +4,9 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="putih">#FFFFFF</color>
+<<<<<<< HEAD
     <color name="hitam">#000000</color>
+=======
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
     <color name="putihHint">#cdffffff</color>
 </resources>

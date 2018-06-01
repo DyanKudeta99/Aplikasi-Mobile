@@ -7,18 +7,42 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="52dp"
+=======
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/logo"
+<<<<<<< HEAD
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:background="@mipmap/ic_launcher" />
 
+=======
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="peminjaman gedung polije"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
         <View
             android:id="@+id/View1"
             android:layout_width="fill_parent"
@@ -26,6 +50,18 @@
             android:layout_gravity="center"
             android:background="#448AFF" />
 
+<<<<<<< HEAD
+=======
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dip"
+            android:text="WELCOME, LOGIN BELOW"
+            android:textSize="16dip" />
+
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
         <EditText
             android:id="@+id/txt_username"
             android:layout_width="match_parent"
@@ -33,7 +69,11 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:hint="Username"
+<<<<<<< HEAD
             android:inputType="textPersonName"
+=======
+            android:inputType="textEmailAddress"
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
             android:singleLine="true" />
 
         <EditText
@@ -43,6 +83,7 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:hint="Password"
+<<<<<<< HEAD
             android:inputType="textPassword"
             android:password="true"
             android:singleLine="true" />
@@ -75,6 +116,30 @@
             android:background="#448AFF"
             android:text="Login"
             android:textColor="@color/putih"
+=======
+            android:password="true"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:text="Login"
+            android:background="#448AFF"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="#00555555"
+            android:text="Register"
+>>>>>>> 5a4846e67105d2bdbe1e167aab1d1b03f91daaa4
             android:textStyle="bold" />
 
     </LinearLayout>
