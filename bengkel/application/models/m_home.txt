@@ -1,0 +1,8 @@
+<?php
+class m_home extends CI_Model {
+	public function index(){
+		$this->load->model('m_home');
+		$this->load->view('v_home');
+		}
+	}
+?>

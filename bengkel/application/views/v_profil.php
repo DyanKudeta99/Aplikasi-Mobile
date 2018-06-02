@@ -6,7 +6,7 @@
 	}
 	table{
 		width: 20%;
-		margin : -300px 8px 0 630px;
+		margin : -200px 8px 0 630px;
 	}
 	table.data th, table.data td {
 		padding: 10px;
@@ -15,16 +15,17 @@
 </style>
 			<table class="data" border="3">
 				<tr style="background-color: red; color: white;">
-					<th>Id mekanik</th>
-					<th>Nama mekanik</th>
+					<th>Nama</th>
+					<th>Username</th>
+					<th>Password</th>
 				</tr>
 				<?php
-				foreach ($mekanik as $b => $row) { ?>
+				foreach ($admin as $b => $row) { ?>
 				<tr>
-					<td><?=$row->id_mekanik?></td>
-					<td><?=$row->nama_mekanik?></td>
+					<td><?=$row->nama_admin?></td>
+					<td><?=$row->username?></td>
+					<td><?=$row->password?></td>
 				</tr>
 			<?php
 			} ?>
 		</table>
-		</p>

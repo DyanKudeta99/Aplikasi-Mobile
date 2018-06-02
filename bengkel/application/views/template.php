@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -68,56 +67,6 @@
 
 				<div class="navbar-buttons navbar-header pull-right" role="navigation">
 					<ul class="nav ace-nav">
-						<li class="grey dropdown-modal">
-							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
-								<i class="ace-icon fa fa-tasks"></i>
-								<span class="badge badge-grey">4</span>
-							</a>
-
-							<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
-								<li class="dropdown-header">
-									<i class="ace-icon fa fa-check"></i>
-									Tasks to complete
-								</li>
-
-								<li class="dropdown-content">
-									<ul class="dropdown-menu dropdown-navbar">
-										<li>
-											<a href="#">
-												<div class="clearfix">
-													<span class="pull-left">Software Update</span>
-													<span class="pull-right">65%</span>
-												</div>
-
-												<div class="progress progress-mini">
-													<div style="width:65%" class="progress-bar"></div>
-												</div>
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<div class="clearfix">
-													<span class="pull-left">Hardware Upgrade</span>
-													<span class="pull-right">35%</span>
-												</div>
-
-												<div class="progress progress-mini">
-													<div style="width:35%" class="progress-bar progress-bar-danger"></div>
-												</div>
-											</a>
-										</li>
-									</ul>
-								</li>
-
-								<li class="dropdown-footer">
-									<a href="#">
-										See tasks with details
-										<i class="ace-icon fa fa-arrow-right"></i>
-									</a>
-								</li>
-							</ul>
-						</li>
 
 						<li class="purple dropdown-modal">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -184,14 +133,14 @@
 
 							<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
 								<li>
-									<a href="#">
+									<a href="<?=site_url('setting');?>">
 										<i class="ace-icon fa fa-cog"></i>
-										Settings
+										Edit Profil
 									</a>
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="<?=site_url('profil');?>">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -200,7 +149,7 @@
 								<li class="divider"></li>
 
 								<li>
-									<a href="#">
+									<a href="<?=site_url('Login_Ahass');?>">
 										<i class="ace-icon fa fa-power-off"></i>
 										Logout
 									</a>
@@ -254,7 +203,7 @@
 
 				<ul class="nav nav-list">
 					<li class="">
-						<a href="index.html">
+						<a href="<?=site_url('service');?>">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Service </span>
 						</a>
@@ -302,7 +251,7 @@
 					</li>
 
 					<li class="">
-						<a href="widgets.html">
+						<a href="<?=site_url('booking');?>">
 							<i class="menu-icon fa fa-list-alt"></i>
 							<span class="menu-text"> Booking </span>
 						</a>
@@ -310,14 +259,6 @@
 						<b class="arrow"></b>
 					</li>
 					
-					<li class="">
-						<a href="widgets.html">
-							<i class="menu-icon fa fa-list-alt"></i>
-							<span class="menu-text"> More Info </span>
-						</a>
-
-						<b class="arrow"></b>
-					</li>
 				</ul>
 					
 
@@ -334,31 +275,16 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="#">Home</a>
+								<a href="<?=site_url('home');?>">Home</a>
 							</li>
-
-							<li>
-								<a href="#">Tables</a>
-							</li>
-							<li class="active">Mekanik</li>
 						</ul><!-- /.breadcrumb -->
 
-						<div class="nav-search" id="nav-search">
-							<form class="form-search">
-								<span class="input-icon">
-									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
-									<i class="ace-icon fa fa-search nav-search-icon"></i>
-								</span>
-							</form>
-						</div><!-- /.nav-search -->
 					</div>
 
 					<div class="content-home-1-right-image">
       <!--<a href="budidaya-padi-organik-metode-sri/berita/kambing-boerka-silangan-baru-kambing-kacang/index.html"><img width="300" height="169" src="wp-content/uploads/kambing-boerka-300x169.jpg" class="content-home-1-right-thumb wp-post-image" alt="Kambing Boerka" srcset="https://alamtani.com/wp-content/uploads/kambing-boerka-300x169.jpg 300w, https://alamtani.com/wp-content/uploads/kambing-boerka-300x169.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a>-->
         <div class="content-home-1-right-text">
         <a href="<?=site_url('mekanik');?>">
-          <!--<h3>Kilasan</h3>-->
-         <!-- <h2>Kambing Boerka, silangan baru kambing kacang</h2>-->
         </a>
         </div>
     </div>
@@ -372,21 +298,6 @@
 						<span class="bigger-120">
 							<span class="blue bolder">Honda</span>
 							Ahass Motor 2018
-						</span>
-
-						&nbsp; &nbsp;
-						<span class="action-buttons">
-							<a href="#">
-								<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
-							</a>
-
-							<a href="#">
-								<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
-							</a>
-
-							<a href="#">
-								<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
-							</a>
 						</span>
 					</div>
 				</div>

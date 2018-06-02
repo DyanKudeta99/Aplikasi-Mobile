@@ -6,7 +6,7 @@
 	}
 	table{
 		width: 20%;
-		margin : -300px 8px 0 630px;
+		margin : -300px 8px 0 500px;
 	}
 	table.data th, table.data td {
 		padding: 10px;
@@ -15,14 +15,20 @@
 </style>
 			<table class="data" border="3">
 				<tr style="background-color: red; color: white;">
-					<th>Id mekanik</th>
-					<th>Nama mekanik</th>
+					<th>ID</th>
+					<th>No Antrian</th>
+					<th>Nama Customer</th>
+					<th>Tgl Booking</th>
+					<th>Nopol</th>
 				</tr>
 				<?php
-				foreach ($mekanik as $b => $row) { ?>
+				foreach ($booking as $b => $row) { ?>
 				<tr>
-					<td><?=$row->id_mekanik?></td>
-					<td><?=$row->nama_mekanik?></td>
+					<td><?=$row->Id_booking?></td>
+					<td><?=$row->no_antrian?></td>
+					<td><?=$row->id_user?></td>
+					<td><?=$row->tgl_booking?></td>
+					<td><?=$row->Nopol?></td>
 				</tr>
 			<?php
 			} ?>

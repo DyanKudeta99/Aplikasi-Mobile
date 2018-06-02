@@ -4,7 +4,7 @@
 		border-collapse: collapse;
 	}
 	table{
-		margin : -340px 8px 0 460px;
+		margin : -300px 8px 0 460px;
 	}
 	table.data th, table.data td {
 		padding: 10px;

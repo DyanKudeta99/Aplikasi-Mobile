@@ -4,7 +4,7 @@
 </head>
 <body>
 <h2>Login Admin</h2>
-<form action="Login_Ahass" method="POST" align="center">
+<form action="<?=site_url('Login_Ahass/index');?>" method="POST" align="center">
 <b>Username</b><br>
 <input type = 'text' name = 'username'></br></br>
 <b>Password</b><br>

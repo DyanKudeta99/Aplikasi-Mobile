@@ -1,17 +1,20 @@
 <title><?=$header; ?></title>
 <style type="text/css">
-table.data {
+p.data {
 		border-collapse: collapse;
 		top: 10px;
 	}
-	table{
-		margin : -340px 8px 0 580px;
+	p{
+		margin : -300px 8px 0 580px;
 	}
-	table.data th, table.data td {
+	p.data th, p.data td, p.data a {
 		padding: 10px;
 	}
+	
 </style>
+		<p>
 		<table class="data" border="3" align="center" >
+		<a href="<?=site_url('tsparepart');?>">Tambah Sparepart</a>
 			<tr style="background-color: red; color: white;">
 				<th>Kode Sparepart</th>
 				<th>Nama Sparepart</th>
@@ -27,3 +30,4 @@ table.data {
 			<?php
 			} ?>
 		</table>
+		</p>
