@@ -9,6 +9,14 @@
     tools:context=".Pemesanan">
 
     <EditText
+        android:id="@+id/input_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Id"
+        android:inputType="textPersonName"
+        android:textSize="16sp" />
+
+    <EditText
         android:id="@+id/input_nama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,39 +25,15 @@
         android:textSize="16sp"/>
 
     <EditText
-        android:id="@+id/input_nik"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nomor Induk Kependudukan"
-        android:inputType="number"
-        android:textSize="16sp" />
-
-    <EditText
-        android:id="@+id/input_umur"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Usia"
-        android:inputType="number"
-        android:textSize="16sp"/>
-
-    <EditText
-        android:id="@+id/input_alamat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Alamat"
-        android:inputType="text"
-        android:textSize="16sp"/>
-
-    <EditText
-        android:id="@+id/input_nomor_polisi"
+        android:id="@+id/input_nopol"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nomor Polisi"
-        android:inputType="number"
+        android:inputType="text"
         android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/input_jenis_kendaraan"
+        android:id="@+id/input_jk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Jenis Kendaraan"
@@ -83,26 +67,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="ID" />
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="Nama" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="NIK" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Umur" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Alamat" />
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -132,19 +105,8 @@
                 android:text=":" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text=":" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text=":" />
-
-            <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text=":" />
@@ -172,36 +134,24 @@
             android:layout_marginTop="8dp">
 
             <TextView
+                android:id="@+id/hasil_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
                 android:id="@+id/hasil_nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
             <TextView
-                android:id="@+id/hasil_nik"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/hasil_umur"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/hasil_alamat"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/hasil_nomor_polisi"
+                android:id="@+id/hasil_nopol"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
             <TextView
-                android:id="@+id/hasil_jenis_kendaraan"
+                android:id="@+id/hasil_jk"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />

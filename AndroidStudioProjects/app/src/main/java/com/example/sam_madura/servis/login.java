@@ -44,7 +44,7 @@ public class login extends AppCompatActivity {
 
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_MESSAGE = "message";
-
+    public final static String TAG_ID_USER = "id";
     public final static String TAG_USERNAME = "username";
     public final static String TAG_ID = "nama";
     public final static String TAG_EMAIL = "email";
@@ -84,6 +84,7 @@ public class login extends AppCompatActivity {
         // Cek session login jika TRUE maka langsung buka MainActivity
         sharedpreferences = getSharedPreferences(my_shared_preferences, Context.MODE_PRIVATE);
         session = sharedpreferences.getBoolean(session_status, false);
+        //id = sharedpreferences.getString(TAG_ID_USER, null);
         nama = sharedpreferences.getString(TAG_ID, null);
         username = sharedpreferences.getString(TAG_USERNAME, null);
         email = sharedpreferences.getString(TAG_EMAIL, null);
@@ -158,6 +159,7 @@ public class login extends AppCompatActivity {
 
                     // Check for error node in json
                     if (success == 1) {
+                        String id = jObj.getString(TAG_ID_USER);
                         String username = jObj.getString(TAG_USERNAME);
                         String nama = jObj.getString(TAG_ID);
                         String email = jObj.getString(TAG_EMAIL);
@@ -171,6 +173,7 @@ public class login extends AppCompatActivity {
                         // menyimpan login ke session
                         SharedPreferences.Editor editor = sharedpreferences.edit();
                         editor.putBoolean(session_status, true);
+                        editor.putString(TAG_ID_USER, id);
                         editor.putString(TAG_ID, nama);
                         editor.putString(TAG_USERNAME, username);
                        editor.putString(TAG_EMAIL, email);
