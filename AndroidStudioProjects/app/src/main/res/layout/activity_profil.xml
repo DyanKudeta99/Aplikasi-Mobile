@@ -10,10 +10,10 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="104dp"
+        android:layout_height="114dp"
         android:layout_gravity="center"
-        android:background="@mipmap/ic_launcher" />
+        android:background="@drawable/portrait_black" />
 
     <TextView
         android:layout_width="wrap_content"
