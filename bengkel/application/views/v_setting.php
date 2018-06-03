@@ -1,4 +1,4 @@
-<title><?=$template; ?></title>
+<title><?=$header; ?></title>
 		<style type="text/css">
 				p.data {
 		border-collapse: collapse;
@@ -13,15 +13,25 @@
 		align: center;
 	}
 </style>
-			<p class="data" border="3">
-			<form action="<?=site_url('setting/update');?>" method="POST" align="center">
-			<h2>Edit Profil Admin</h2>
-				<b>Nama</b><br>
-				<input type = 'varchar' name = 'nama_admin'></br></br>
-				<b>Username</b><br>
-				<input type = 'varchar' name = 'username'></br></br>
-				<b>Password</b><br>
-				<input type = 'text' name = 'password'></br></br>
-				<input type = 'submit' name = 'btnSave' value="Simpan Perubahan">
-			</form>
-			</p>
+<h3>Edit Profil Admin</h3>
+<table>
+<?php echo form_open('profil/editdata'); ?>
+<tr>
+    <td> Nama Admin </td>
+    <td> <?php echo form_input('nama_admin'); ?> </td>
+</tr>
+<tr>
+    <td> Username </td>
+    <td> <?php echo form_input('username'); ?> </td>
+</tr>
+<tr>
+    <td> Password </td>
+    <td> <?php echo form_input('password'); ?> </td>
+</tr>
+<tr>
+    <td> </td>
+    <td> <?php echo form_submit('submit', 'Simpan Perubahan'); ?> </td>
+</tr>
+</table>
+<?php echo form_close(); ?>
+</form>
