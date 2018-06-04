@@ -203,9 +203,8 @@ public class Register extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        intent = new Intent(Register.this, login.class);
+
         finish();
-        startActivity(intent);
     }
 
 }

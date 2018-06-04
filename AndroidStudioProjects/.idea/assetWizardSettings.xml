@@ -18,7 +18,11 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
+<<<<<<< HEAD
                                       <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_filter_9_black_24dp.xml" />
+=======
+                                      <entry key="url" value="jar:file:/E:/Android%20Studio/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_settings_black_24dp.xml" />
+>>>>>>> 8959bec1aebc9c0c666a5f3580fe19cebcd98b1e
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,8 +32,14 @@
                         </option>
                         <option name="values">
                           <map>
+<<<<<<< HEAD
                             <entry key="outputName" value="black9" />
                             <entry key="sourceFile" value="C:\Users\ar_dy" />
+=======
+                            <entry key="color" value="ffffff" />
+                            <entry key="outputName" value="ic_settings_black_24dp" />
+                            <entry key="sourceFile" value="C:\Users\asus" />
+>>>>>>> 8959bec1aebc9c0c666a5f3580fe19cebcd98b1e
                           </map>
                         </option>
                       </PersistentState>

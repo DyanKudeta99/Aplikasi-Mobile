@@ -52,15 +52,23 @@ public class login extends AppCompatActivity {
     public final static String TAG_NOHP = "nohp";
 
     String tag_json_obj = "json_obj_req";
-
     SharedPreferences sharedpreferences;
     Boolean session = false;
     String nama, username, email, alamat, nohp;
     public static final String my_shared_preferences = "my_shared_preferences";
     public static final String session_status = "session_status";
 
+    //untuk mengeksekusi tombol back
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        if(ActivityHome.activityHome != null){
+            try {
+                ActivityHome.activityHome.finish();
+            }catch (Exception e){
+
+            }
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 

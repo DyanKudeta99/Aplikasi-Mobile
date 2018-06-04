@@ -3,7 +3,7 @@ class tsparepart extends CI_Controller{
 	function __construct(){
 		parent::__construct();		
 		$this->load->model('m_tsparepart');
-		$this->load->helper('url');
+		$this->load->helper(array('url','form'));
  
 	}
  
