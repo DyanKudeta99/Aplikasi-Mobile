@@ -42,7 +42,7 @@ private CardView pemesananCard, serfisCard, sparepartCard, infoCard;
             case R.id.pemesanan_card : intent = new Intent(this,Pemesanan.class);
             startActivity(intent);
             break;
-            case R.id.serfis_card : intent = new Intent(this,ActivityTabServis.class);
+            case R.id.serfis_card : intent = new Intent(this,Servis.class);
             startActivity(intent);
             break;
             case R.id.sperpart_card : intent = new Intent(this,Sperpart.class);

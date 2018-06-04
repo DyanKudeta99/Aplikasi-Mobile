@@ -1,12 +1,10 @@
 package com.example.sam_madura.servis;
 
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
-
-public class ActivityServiceTuneUp extends AppCompatActivity {
+public class ActivityServiceRegular extends AppCompatActivity {
 
     ListView lst;
     String[] nama = {"Pertama","Kedua","Ketiga"};
@@ -15,9 +13,9 @@ public class ActivityServiceTuneUp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_service_tune_up);
+        setContentView(R.layout.activity_service_regular);
 
-        lst= (ListView) findViewById(R.id.listtuneup);
+        lst= (ListView) findViewById(R.id.listregular);
         Custom customListView= new Custom(this, nama,imgid);
         lst.setAdapter(customListView);
 
