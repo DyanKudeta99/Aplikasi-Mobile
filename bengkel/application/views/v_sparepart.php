@@ -14,7 +14,7 @@ p.data {
 </style>
 		<p>
 		<table class="data" border="3" align="center" >
-		<a href="<?=site_url('tsparepart');?>">Tambah Sparepart</a>
+		<?php echo anchor('sparepart/tambahdata','+ Tambah Data'); ?>
 			<tr style="background-color: red; color: white;">
 				<th>Kode Sparepart</th>
 				<th>Nama Sparepart</th>
