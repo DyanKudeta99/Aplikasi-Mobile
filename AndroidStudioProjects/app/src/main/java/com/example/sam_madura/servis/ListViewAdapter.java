@@ -74,50 +74,6 @@ import java.util.Locale;
             //set the result in imageview
             holder.mIconIv.setImageResource(modellist.get(postition).getIcon());
 
-            //listview item clicks
-            view.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    //code later
-                    if (modellist.get(postition).getTitle().equals("Aqi")){
-                        //start NewActivity with title for actionbar and text for textview
-                        Intent intent = new Intent(mContext, ActivityListView.class);
-                        intent.putExtra("actionBarTitle", "Aqi");
-                        intent.putExtra("contentTv", "This is Aqi detail...");
-                        mContext.startActivity(intent);
-                    }
-                    if (modellist.get(postition).getTitle().equals("Busi")){
-                        //start NewActivity with title for actionbar and text for textview
-                        Intent intent = new Intent(mContext, ActivityListView.class);
-                        intent.putExtra("actionBarTitle", "Busi");
-                        intent.putExtra("contentTv", "This is Busi detail...");
-                        mContext.startActivity(intent);
-                    }
-                    if (modellist.get(postition).getTitle().equals("GearHonda")){
-                        //start NewActivity with title for actionbar and text for textview
-                        Intent intent = new Intent(mContext, ActivityListView.class);
-                        intent.putExtra("actionBarTitle", "GearHonda");
-                        intent.putExtra("contentTv", "This is GearHonda detail...");
-                        mContext.startActivity(intent);
-                    }
-                    if (modellist.get(postition).getTitle().equals("KampasRem")){
-                        //start NewActivity with title for actionbar and text for textview
-                        Intent intent = new Intent(mContext, ActivityListView.class);
-                        intent.putExtra("actionBarTitle", "KampasRem");
-                        intent.putExtra("contentTv", "This is KampasRem detail...");
-                        mContext.startActivity(intent);
-                    }
-                    if (modellist.get(postition).getTitle().equals("Sparepart")){
-                        //start NewActivity with title for actionbar and text for textview
-                        Intent intent = new Intent(mContext, ActivityListView.class);
-                        intent.putExtra("actionBarTitle", "Sparepart");
-                        intent.putExtra("contentTv", "This is Sparepart detail...");
-                        mContext.startActivity(intent);
-                    }
-                }
-            });
-
-
             return view;
         }
 

@@ -7,7 +7,7 @@
     tools:context=".ActivityHome"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="@color/backgroundcolor"
+    android:background="@drawable/background_new_login"
     android:gravity="center">
 
     <LinearLayout
@@ -48,7 +48,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Pemesanan Nomer Antrian"
+                    android:text="Pesan Nomer Antrian"
                     android:padding="1dp"
                     android:textColor="@android:color/darker_gray"/>
 
