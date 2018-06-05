@@ -13,6 +13,7 @@
 		align: center;
 	}
 </style>
+
 <h3>Tambah Jenis Service</h3>
 <table>
 <?php echo form_open('jservice/tambahdata'); ?>

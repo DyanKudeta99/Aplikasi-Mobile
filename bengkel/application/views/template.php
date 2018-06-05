@@ -287,7 +287,9 @@
 					</div>
 
 					<div class="content-home-1-right-image">
-					
+					<div class="transparan2">
+					<img class="nav-user-photo" src="<?php echo base_url()?>aceadmin/assets/images/ahas.jpg" width=100% /> </div>
+
         <div class="content-home-1-right-text">
         <a href="<?=site_url('mekanik');?>">
         </a>
