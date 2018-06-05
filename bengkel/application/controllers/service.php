@@ -13,7 +13,8 @@ class service extends CI_Controller {
 				'service' => $query->result(),
 		);
 		$this->load->view('template', $data);
-		$this->load->view('v_service');
+		$data=array('get_nama_mekanik'=> $this->m_service->get_option());  
+		$this->load->view('v_service', $data);
 		
 	}
 	

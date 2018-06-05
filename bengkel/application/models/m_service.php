@@ -17,5 +17,12 @@ class m_service extends CI_Model {
         );  
         $this->db->insert('service', $data);
     }
+	
+	function get_option() {
+		$this->db->select('*');
+		$this->db->from('mekanik');
+		$query = $this->db->get();
+		return $query->result();
+	}
 }
 ?>

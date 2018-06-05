@@ -13,10 +13,7 @@
 		align: center;
 	}
 </style>
-
-</div>
 			<table class="data" border="3">
-			<form action="<?=site_url('cetak/index');?>" method="POST" align="center">
 				<tr style="background-color: red; color: white;">
 					<th>Kode</th>
 					<th>Kode Service</th>
@@ -27,8 +24,7 @@
 					<th>Nama Customer</th>
 					<th>Nama Admin</th>
 					<th>Total</th>
-					<th>Nama Mekanik</th>
-					<th>Cetak</th>
+					
 				</tr>
 				<?php
 				foreach ($service as $b => $row) { ?>
@@ -42,11 +38,6 @@
 					<td><?=$row->Id_user?></td>
 					<td><?=$row->id_admin?></td>
 					<td><?=$row->Total?></td>
-					<td><select class="form-control" name="nama_mekanik">
-					<option  value="">-Pilih Mekanik-</option>                    
-					<?php foreach($get_nama_mekanik as $row) { ?>
-					<option value="<?php echo $row->nama_mekanik;?>"><?php echo $row->nama_mekanik;?></option> <?php } ?> </select> </td>
-					<td><input type="submit" value="Cetak"></td>
 					
 				</tr>
 				
