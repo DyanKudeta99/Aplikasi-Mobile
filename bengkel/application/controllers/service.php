@@ -16,5 +16,14 @@ class service extends CI_Controller {
 		$this->load->view('v_service');
 		
 	}
+	
+	function tambahdata() {
+        if($this->input->post('submit')){
+			$this->load->model('m_service');
+            $this->m_service->tambah();
+            redirect('service/index');
+        }
+        $this->load->view('v_input');
+    }
 }
 ?>
