@@ -5,8 +5,8 @@
 		align: center;
 	}
 	table{
-		width: 40%;
-		margin : -300px 8px 0 500px;
+		width: 20%;
+		margin : -300px 8px 0 400px;
 	}
 	table.data th, table.data td {
 		padding: 10px;
@@ -32,7 +32,7 @@
 					<td><?=$row->Kode?></td>
 					<td><?=$row->Kode_service?></td>
 					<td><?=$row->Tgl_service?></td>
-					<td><?=$row->Kode_sparepart?></td>
+					<td><?=$row->Kode_sparepert?></td>
 					<td><?=$row->Nopol?></td>
 					<td><?=$row->id_booking?></td>
 					<td><?=$row->Id_user?></td>

@@ -5,8 +5,8 @@
 		align: center;
 	}
 	table{
-		width: 40%;
-		margin : -200px 8px 0 500px;
+		width: 20%;
+		margin : -200px 8px 0 630px;
 	}
 	table.data th, table.data td {
 		padding: 10px;
