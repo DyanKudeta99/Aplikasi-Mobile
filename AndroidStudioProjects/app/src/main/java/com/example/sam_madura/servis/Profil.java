@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
@@ -56,6 +57,8 @@ public class Profil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("PROFILE");
 
         txt_nama = (EditText) findViewById(R.id.nama1);
         txt_username = (EditText) findViewById(R.id.username2);

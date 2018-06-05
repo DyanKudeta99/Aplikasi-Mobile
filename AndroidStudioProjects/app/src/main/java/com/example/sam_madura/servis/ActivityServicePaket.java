@@ -1,7 +1,9 @@
 package com.example.sam_madura.servis;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 public class ActivityServicePaket extends AppCompatActivity {
@@ -15,8 +17,20 @@ public class ActivityServicePaket extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service_paket);
 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("SERVICE");
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         lst= (ListView) findViewById(R.id.listpaket);
         Custom customListView= new Custom(this, nama,imgid);
         lst.setAdapter(customListView);
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        //tombolBack
+        finish();
+        return super.onOptionsItemSelected(item);
+    }
 }
+

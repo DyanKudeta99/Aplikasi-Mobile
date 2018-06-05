@@ -6,9 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".ActivityServiceRegular">
 
-    <ListView
-        android:id="@+id/listregular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></ListView>
+    <LinearLayout
+        android:id="@+id/layot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="353dp"
+            android:layout_height="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Regular"
+            android:textAlignment="center"
+
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="184dp"
+            tools:ignore="MissingConstraints" />
+
+        <ListView
+            android:id="@+id/listregular"
+            android:layout_width="match_parent"
+            android:layout_height="418dp"
+            android:layout_below="@+id/text2"></ListView>
+
+        <Button
+            android:id="@+id/btnregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layot"
+            android:layout_marginBottom="0dp"
+            android:text="Button"
+            tools:layout_editor_absoluteX="138dp"
+            android:gravity="center"
+            tools:layout_editor_absoluteY="463dp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
