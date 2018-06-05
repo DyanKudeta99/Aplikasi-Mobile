@@ -1,18 +1,18 @@
 <title><?=$header; ?></title>
 <style type="text/css">
-p.data {
+table.data {
 		border-collapse: collapse;
 		top: 10px;
 	}
-	p{
-		margin : -300px 8px 0 580px;
+	table{
+		width: 40%;
+		margin : -300px 8px 0 500px;
 	}
-	p.data th, p.data td, p.data a {
+	table.data th, table.data td {
 		padding: 10px;
 	}
 	
 </style>
-		<p>
 		<table class="data" border="3" align="center" >
 		<?php echo anchor('sparepart/tambahdata','+ Tambah Data'); ?>
 			<tr style="background-color: red; color: white;">
@@ -30,4 +30,3 @@ p.data {
 			<?php
 			} ?>
 		</table>
-		</p>

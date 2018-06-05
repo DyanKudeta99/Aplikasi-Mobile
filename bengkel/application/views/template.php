@@ -57,7 +57,7 @@
 				</button>
 
 				<div class="navbar-header pull-left">
-					<a href="index.html" class="navbar-brand">
+					<a href="example" class="navbar-brand">
 						<small>
 							<i class="fa fa-leaf"></i>
 							Admin Bengkel Ahass
@@ -71,7 +71,7 @@
 						<li class="purple dropdown-modal">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 								<i class="ace-icon fa fa-bell icon-animated-bell"></i>
-								<span class="badge badge-important">8</span>
+								<span class="badge badge-important"></span>
 							</a>
 
 							<ul class="dropdown-menu-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
@@ -89,7 +89,7 @@
 														<i class="btn btn-xs no-hover btn-pink fa fa-comment"></i>
 														New Booking
 													</span>
-													<span class="pull-right badge badge-info">+12</span>
+													<span class="pull-right badge badge-info"></span>
 												</div>
 											</a>
 										</li>
@@ -108,7 +108,7 @@
 														<i class="btn btn-xs no-hover btn-success fa fa-shopping-cart"></i>
 														New Orders
 													</span>
-													<span class="pull-right badge badge-success">+8</span>
+													<span class="pull-right badge badge-success"></span>
 												</div>
 											</a>
 										</li>
@@ -121,7 +121,7 @@
 
 						
 						<li class="light-blue dropdown-modal">
-							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+							<a data-toggle="dropdown" href="<?=site_url('profil');?>" class="dropdown-toggle">
 								<img class="nav-user-photo" src="<?php echo base_url()?>aceadmin/assets/images/yoland.jpg" alt="Vinny's Photo" />
 								<span class="user-info">
 									<small>Welcome,</small>
@@ -222,7 +222,7 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							<li class="active">
+							<li class="">
 								<a href="<?=site_url('mekanik');?>">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Mekanik
@@ -243,6 +243,14 @@
 								<a href="<?=site_url('sparepart');?>">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Sparepart
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="<?=site_url('jservice');?>">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Jenis Service
 								</a>
 
 								<b class="arrow"></b>
@@ -273,16 +281,13 @@
 				<div class="main-content-inner">
 					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
 						<ul class="breadcrumb">
-							<li>
-								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="<?=site_url('home');?>">Home</a>
-							</li>
+							
 						</ul><!-- /.breadcrumb -->
 
 					</div>
 
 					<div class="content-home-1-right-image">
-      <!--<a href="budidaya-padi-organik-metode-sri/berita/kambing-boerka-silangan-baru-kambing-kacang/index.html"><img width="300" height="169" src="wp-content/uploads/kambing-boerka-300x169.jpg" class="content-home-1-right-thumb wp-post-image" alt="Kambing Boerka" srcset="https://alamtani.com/wp-content/uploads/kambing-boerka-300x169.jpg 300w, https://alamtani.com/wp-content/uploads/kambing-boerka-300x169.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a>-->
+					
         <div class="content-home-1-right-text">
         <a href="<?=site_url('mekanik');?>">
         </a>
@@ -298,6 +303,8 @@
 						<span class="bigger-120">
 							<span class="blue bolder">Honda</span>
 							Ahass Motor 2018
+							<img class="nav-user-photo" src="<?php echo base_url()?>aceadmin/assets/images/honda.jpg" alt="honda's Photo" width=7% />
+							<img class="nav-user-photo" src="<?php echo base_url()?>aceadmin/assets/images/ahass.png" alt="ahass's Photo" width=6% />
 						</span>
 					</div>
 				</div>
