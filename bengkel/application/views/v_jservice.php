@@ -6,31 +6,31 @@
 	}
 	table{
 		width: 50%;
-		margin : -300px 8px 0 450px;
+		margin : -300px 8px 0 500px;
 	}
 	table.data th, table.data td {
 		padding: 10px;
 		align: center;
 	}
 </style>
+			<?php echo anchor('jservice/tambahdata','+ Tambah Data Service'); ?>
 			<table class="data" border="3">
 				<tr style="background-color: red; color: white;">
-					<th>ID</th>
-					<th>No Antrian</th>
-					<th>Nama Customer</th>
-					<th>Tgl Booking</th>
-					<th>Nopol</th>
+					<th>Kode Service</th>
+					<th>Jenis Service</th>
+					<th>Harga Service</th>
 				</tr>
 				<?php
-				foreach ($booking as $b => $row) { ?>
+				foreach ($harga_service as $b => $row) { ?>
 				<tr>
-					<td><?=$row->id_booking?></td>
-					<td><?=$row->no_antrian?></td>
-					<td><?=$row->id_user?></td>
-					<td><?=$row->tgl_booking?></td>
-					<td><?=$row->Nopol?></td>
+					<td><?=$row->Kode_service?></td>
+					<td><?=$row->Jenis_service?></td>
+					<td><?=$row->Harga_service?></td>
+					
 				</tr>
+				
 			<?php
 			} ?>
 		</table>
+				
 		</p>
