@@ -62,20 +62,18 @@ public class Pemesanan extends AppCompatActivity {
     private EditText inputNama,inputNopol,inputJk;
     private TextView hasilNama,hasilNik,hasilUmur,hasilAlamat,hasilNopol,hasilJenis;
 
-    @BindView(R.id.input_id)
-    EditText input_Id;
+
     @BindView(R.id.input_nama)
     EditText input_Nama;
     @BindView(R.id.input_nopol)
     EditText input_Nopol;
     @BindView(R.id.input_jk)
     EditText input_Jk;
-
+    @BindView(R.id.no_Antrian)EditText antrian;
     @BindView(R.id.simpan_button)
     Button simpan_button;
 
-    @BindView(R.id.hasil_id)
-    TextView hasil_Id;
+
     @BindView(R.id.hasil_nama)
     TextView hasil_Nama;
     @BindView(R.id.hasil_nopol)
@@ -99,7 +97,7 @@ public class Pemesanan extends AppCompatActivity {
         nopol = sharedpreferences.getString(TAG_NOPOL, null);
         jk = sharedpreferences.getString(TAG_JK, null);
 
-        input_Id.setText(id);
+       // input_Id.setText(id);
         input_Nama.setText(nama);
         input_Nopol.setText(nopol);
         input_Jk.setText(jk);
@@ -112,8 +110,8 @@ public class Pemesanan extends AppCompatActivity {
 
     @OnClick(R.id.simpan_button)
         public void btnClicked () {
-            String id = input_Id.getText().toString();
-            hasil_Id.setText(id);
+            //String id = input_Id.getText().toString();
+
             String nama = input_Nama.getText().toString();
             hasil_Nama.setText(nama);
             String nopol = input_Nopol.getText().toString();
@@ -156,6 +154,9 @@ public class Pemesanan extends AppCompatActivity {
                 try {
                     JSONObject jObj = new JSONObject(response);
                     int success = jObj.getInt(TAG_SUCCESS);
+                    int id_booking = jObj.getInt("id_booking");
+                    antrian.setText(id_booking+"");
+
 
                     // Check for error node in json
                     if (success == 1) {
@@ -222,24 +223,12 @@ public class Pemesanan extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         //tombolBack
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == android.R.id.home) {
-            Intent intent = new Intent(Pemesanan.this, ActivityHome.class);
-            startActivity(intent);
-            this.finish();
-        }
+            finish();
         return super.onOptionsItemSelected(item);
     }
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(Pemesanan.this, ActivityHome.class);
-        startActivity(intent);
         finish();
     }
 }

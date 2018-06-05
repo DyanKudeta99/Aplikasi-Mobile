@@ -36,19 +36,22 @@
                 android:id="@+id/tabItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TUNE UP" />
+                android:text="TUNE UP"
+                android:icon="@drawable/sparepart"/>
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tabItem2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="REGULAR SERVICE" />
+                android:text="REGULAR SERVICE"
+                android:icon="@drawable/service"/>
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tabItem3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PAKET SERVICE" />
+                android:text="PAKET SERVICE"
+                android:icon="@drawable/pesan_antrian"/>
 
         </android.support.design.widget.TabLayout>
     </android.support.design.widget.AppBarLayout>

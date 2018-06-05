@@ -4,12 +4,19 @@ public class Model {
     String title;
     String desc;
     int icon;
+    String mahasiswa;
+    Integer imgid;
 
     //constructor
     public Model(String title, String desc, int icon) {
         this.title = title;
         this.desc = desc;
         this.icon = icon;
+    }
+
+    public Model(String mahasiswa, Integer imgid) {
+        this.mahasiswa= mahasiswa;
+        this.imgid=imgid;
     }
 
     //getters
