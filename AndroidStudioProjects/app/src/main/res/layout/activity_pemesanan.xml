@@ -8,13 +8,6 @@
     android:orientation="vertical"
     tools:context=".Pemesanan">
 
-    <EditText
-        android:id="@+id/input_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Id"
-        android:inputType="textPersonName"
-        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/input_nama"
@@ -64,12 +57,6 @@
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="ID" />
-
 
             <TextView
                 android:id="@+id/textView8"
@@ -100,12 +87,6 @@
             android:layout_marginTop="8dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text=":" />
-
-            <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -134,11 +115,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp">
 
-            <TextView
-                android:id="@+id/hasil_id"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+
 
             <TextView
                 android:id="@+id/hasil_nama"
@@ -158,6 +135,30 @@
                 android:layout_weight="1" />
 
         </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Antrian Anda : " />
+
+        <EditText
+            android:id="@+id/no_Antrian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:inputType="textPersonName"
+            android:hint="Nomor Antrian" />
 
     </LinearLayout>
 
