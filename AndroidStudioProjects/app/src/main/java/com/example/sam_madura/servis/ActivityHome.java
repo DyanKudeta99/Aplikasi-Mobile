@@ -15,10 +15,12 @@ public class ActivityHome extends AppCompatActivity implements View.OnClickListe
 private CardView pemesananCard, serfisCard, sparepartCard, infoCard;
     private static boolean userPressedBackAgain = false;
 
+    public static ActivityHome activityHome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        activityHome = this;
 
         //inialisasi card
         pemesananCard = (CardView) findViewById(R.id.pemesanan_card);
@@ -42,7 +44,7 @@ private CardView pemesananCard, serfisCard, sparepartCard, infoCard;
             case R.id.pemesanan_card : intent = new Intent(this,Pemesanan.class);
             startActivity(intent);
             break;
-            case R.id.serfis_card : intent = new Intent(this,ActivityTabServis.class);
+            case R.id.serfis_card : intent = new Intent(this,Servis.class);
             startActivity(intent);
             break;
             case R.id.sperpart_card : intent = new Intent(this,Sperpart.class);
@@ -50,7 +52,6 @@ private CardView pemesananCard, serfisCard, sparepartCard, infoCard;
             break;
             case R.id.info_card : intent = new Intent(this,ActivityTabInfo.class);
             startActivity(intent);
-            finish();
             break;
             default:break;
         }

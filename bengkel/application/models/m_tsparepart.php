@@ -8,3 +8,4 @@ class m_tsparepart extends CI_Model{
 		$this->db->insert($sparepart,$data);
 	}
 }
+?>

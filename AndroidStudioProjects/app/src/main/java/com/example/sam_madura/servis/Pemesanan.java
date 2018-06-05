@@ -223,24 +223,12 @@ public class Pemesanan extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         //tombolBack
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == android.R.id.home) {
-            Intent intent = new Intent(Pemesanan.this, ActivityHome.class);
-            startActivity(intent);
-            this.finish();
-        }
+            finish();
         return super.onOptionsItemSelected(item);
     }
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(Pemesanan.this, ActivityHome.class);
-        startActivity(intent);
         finish();
     }
 }

@@ -13,12 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityHome"></activity>
+        <activity android:name=".ActivityHome" />
         <activity
             android:name=".login"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Pemesanan"
             android:label="Pemesanan Nomor Antrian" />
@@ -38,8 +36,9 @@
         <activity android:name=".ActivityServiceTuneUp" />
         <activity
             android:name=".ActivityListView"
-            android:parentActivityName=".Sperpart"></activity>
-        <activity android:name=".SplashActivity"
+            android:parentActivityName=".Sperpart" />
+        <activity
+            android:name=".SplashActivity"
             android:theme="@style/SplashScreenStyle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,6 +46,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Servis" />
+        <activity android:name=".ActivityServiceRegular" />
+        <activity android:name=".ActivityServicePaket"></activity>
     </application>
 
 </manifest>

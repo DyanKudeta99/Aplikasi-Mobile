@@ -14,6 +14,15 @@ class profil extends CI_Controller{
 		);
 		$this->load->view('template', $data);
 		$this->load->view('v_profil');
-		}
 	}
+
+	function editdata() {
+        if($this->input->post('submit')){
+			$this->load->model('m_profil');
+            $this->m_profil->edit();
+            redirect('profil/index');
+        }
+        $this->load->view('v_profil');
+    }
+}
 ?>
