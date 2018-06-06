@@ -9,8 +9,8 @@ import android.widget.ListView;
 public class ActivityServiceRegular extends AppCompatActivity {
 
     ListView lst;
-    String[] nama = {"Pertama","Kedua","Ketiga"};
-    Integer[] imgid={R.drawable.black1,R.drawable.black2,R.drawable.black3};
+    String[] nama = {"Ganti Busi","Ganti Kampas Rem Depan","Ganti Lampu","Ganti Lampu Sen","Ganti Oli Mesin"};
+    Integer[] imgid={R.drawable.black1,R.drawable.black2,R.drawable.black3,R.drawable.black4,R.drawable.black5};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
