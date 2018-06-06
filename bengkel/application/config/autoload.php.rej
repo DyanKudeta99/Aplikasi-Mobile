@@ -1,0 +1,10 @@
+diff a/bengkel/application/config/autoload.php b/bengkel/application/config/autoload.php	(rejected hunks)
+@@ -52,7 +52,7 @@
+ | Prototype:
+ |
+ |	$autoload['libraries'] = array('database', 'email', 'session');
+-|
++| 
+ | You can also supply an alternative library name to be assigned
+ | in the controller:
+ |

@@ -1,11 +1,12 @@
 <?php
-class Mekanik extends CI_Controller {
+class Mekanik extends CI_Controller{
 	function __construct(){
 		parent::__construct();
-		$this->load->helper(array('url'));
+		$this->load->helper(array('url','form'));
+		
 	}
-	
-	public function index(){
+	public function index()
+	{
 		$this->load->model('Model_mekanik');
 		$query = $this->Model_mekanik->get();
 		$data= array(
@@ -14,7 +15,15 @@ class Mekanik extends CI_Controller {
 		);
 		$this->load->view('template', $data);
 		$this->load->view('view_mekanik');
-		
 	}
+		
+	function tambahdata() {
+        if($this->input->post('submit')){
+			$this->load->model('Model_mekanik');
+            $this->Model_mekanik->tambah();
+            redirect('Mekanik/index');
+        }
+        $this->load->view('v_tmekanik');
+    }
 }
 ?>

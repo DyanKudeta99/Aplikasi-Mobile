@@ -15,7 +15,7 @@ import java.util.Collections;
 public class Servis extends AppCompatActivity {
 
     ListView lst;
-    String[] nama = {"Tune Up","Regular","paket"};
+    String[] nama = {"TUNE UP","REGULAR SERVICE","PAKET SERVICE"};
     Integer[] imgid={R.drawable.aqi,R.drawable.busi2,R.drawable.kampasrem};
 
     @Override

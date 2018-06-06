@@ -11,8 +11,8 @@ import android.widget.ListView;
 public class ActivityServiceTuneUp extends AppCompatActivity {
 
     ListView lst;
-    String[] nama = {"Pertama","Kedua","Ketiga"};
-    Integer[] imgid={R.drawable.black1,R.drawable.black2,R.drawable.black3};
+    String[] nama = {"Pemeriksaan Fungsi Pengereman","Pemeriksaan Fungsi Roda","Pemeriksaan Oli","Pemeriksaan baud dan mur","Pembersihan Karbulator","Pemeriksaan dan pengisian air radiator","Pembersihan Busi"};
+    Integer[] imgid={R.drawable.black1,R.drawable.black2,R.drawable.black3,R.drawable.black4,R.drawable.black5,R.drawable.black6,R.drawable.black7};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

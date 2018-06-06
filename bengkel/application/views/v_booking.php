@@ -5,8 +5,8 @@
 		align: center;
 	}
 	table{
-		width: 20%;
-		margin : -300px 8px 0 500px;
+		width: 50%;
+		margin : -300px 8px 0 450px;
 	}
 	table.data th, table.data td {
 		padding: 10px;
@@ -24,7 +24,7 @@
 				<?php
 				foreach ($booking as $b => $row) { ?>
 				<tr>
-					<td><?=$row->Id_booking?></td>
+					<td><?=$row->id_booking?></td>
 					<td><?=$row->no_antrian?></td>
 					<td><?=$row->id_user?></td>
 					<td><?=$row->tgl_booking?></td>

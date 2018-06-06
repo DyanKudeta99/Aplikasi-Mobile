@@ -5,7 +5,7 @@
 		align: center;
 	}
 	p{
-		width: 20%;
+		width: 40%;
 		margin : -300px 8px 0 630px;
 	}
 	p.data h, p.data b, p.data input {
