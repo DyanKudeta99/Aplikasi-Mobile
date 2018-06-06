@@ -28,9 +28,9 @@ public class Sperpart extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("SPAREPART");
 
-        title = new String[]{"Aqi", "Busi", "GearHonda", "KampasRem", "Sparepart"};
-        description = new String[]{"Aqi detail...", "Busi detail...", "GearHonda detail...", "KampasRem detail...", "Sparepart detail..."};
-        icon = new int[]{R.drawable.aqi, R.drawable.busi2, R.drawable.gearhonda, R.drawable.kampasrem, R.drawable.sparepart1};
+        title = new String[]{"ACCU", "BUSI", "GEAR SEPEDA", "KAMPAS REM"};
+        description = new String[]{"Rp. 100.000", "Rp.35.000", "Rp.150.000", "Rp.100.000"};
+        icon = new int[]{R.drawable.aqi, R.drawable.busi2, R.drawable.gearhonda, R.drawable.kampasrem};
 
         listView = findViewById(R.id.listView);
 

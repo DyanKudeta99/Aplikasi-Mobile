@@ -59,7 +59,7 @@ import java.util.Locale;
 
                 //locate the views in row.xml
                 holder.mTitleTv = view.findViewById(R.id.mainTitle);
-                holder.mDescTv = view.findViewById(R.id.mainDesc);
+                holder.mDescTv = view.findViewById(R.id.mainHarga);
                 holder.mIconIv = view.findViewById(R.id.mainIcon);
 
                 view.setTag(holder);
