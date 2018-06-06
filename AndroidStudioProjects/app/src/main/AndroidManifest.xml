@@ -29,10 +29,6 @@
             android:name=".ActivityTabInfo"
             android:label="@string/title_activity_tab"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ActivityTabServis"
-            android:label="@string/title_activity_tab_servis"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ActivityServiceTuneUp" />
         <activity
             android:name=".ActivityListView"

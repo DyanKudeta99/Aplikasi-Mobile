@@ -4,8 +4,13 @@ public class Model {
     String title;
     String desc;
     int icon;
-    String mahasiswa;
+    String nama;
     Integer imgid;
+
+    public Model(String nama, Integer imgid) {
+        this.nama= nama;
+        this.imgid=imgid;
+    }
 
     //constructor
     public Model(String title, String desc, int icon) {
@@ -14,12 +19,16 @@ public class Model {
         this.icon = icon;
     }
 
-    public Model(String mahasiswa, Integer imgid) {
-        this.mahasiswa= mahasiswa;
-        this.imgid=imgid;
-    }
+
 
     //getters
+    public String getNama() {
+        return this.nama;
+    }
+
+    public int getimgid() {
+        return this.imgid;
+    }
 
 
     public String getTitle() {
