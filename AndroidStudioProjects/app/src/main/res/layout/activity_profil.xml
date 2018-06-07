@@ -114,12 +114,13 @@
 
         <EditText
             android:id="@+id/noHP2"
+            android:maxLength="12"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:enabled="false"
             android:hint="No HP"
-            android:inputType="none"
+
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
             android:textColor="@drawable/edit_text1" />
     </LinearLayout>

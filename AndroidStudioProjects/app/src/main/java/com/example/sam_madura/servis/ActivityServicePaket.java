@@ -94,6 +94,7 @@ public class ActivityServicePaket extends AppCompatActivity {
     }
 
     public void service(View v) {
+
         String serviceP = tvServiceP.getText().toString();
         String hargaP = tvHargaP.getText().toString();
 
