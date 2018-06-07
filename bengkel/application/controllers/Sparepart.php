@@ -14,7 +14,8 @@ class Sparepart extends CI_Controller{
 				'sparepart' => $query->result(),
 		);
 		$this->load->view('template', $data);
-		$this->load->view('v_sparepart');
+		$this->load->view('v_sparepart', $data);
+		$this->load->view('template_foot');
 	}
 		
 	function tambahdata() {
@@ -23,7 +24,9 @@ class Sparepart extends CI_Controller{
             $this->m_sparepart->tambah();
             redirect('sparepart/index');
         }
+		$this->load->view('template');
         $this->load->view('v_tsparepart');
+		$this->load->view('template_foot');
     }
 }
 ?>

@@ -6,15 +6,20 @@ table.data {
 	}
 	table{
 		width: 40%;
-		margin : -300px 8px 0 500px;
+		margin : auto;
+		margin-top : 5%;
 	}
 	table.data th, table.data td {
 		padding: 10px;
+		align: center;
+	}
+	table.data td{
+	background-color : white;
 	}
 	
 </style>
 		<table class="data" border="3" align="center" >
-		<?php echo anchor('sparepart/tambahdata','+ Tambah Data'); ?>
+		<?php echo anchor('sparepart/tambahdata','+ Tambah Sparepart'); ?>
 			<tr style="background-color: red; color: white;">
 				<th>Kode Sparepart</th>
 				<th>Nama Sparepart</th>
