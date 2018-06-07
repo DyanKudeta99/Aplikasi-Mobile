@@ -15,7 +15,7 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/tex3"
+            android:id="@+id/tvserviceT"
             android:layout_width="match_parent"
             android:layout_height="47dp"
             android:layout_alignParentTop="true"
@@ -39,6 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right">
             <TextView
+                android:id="@+id/tvhargaT"
                 android:layout_width="100sp"
                 android:layout_height="wrap_content"
                 android:text="Rp. 90.000"
@@ -53,6 +54,7 @@
 
     <Button
         android:id="@+id/btntuneup"
+        android:onClick="service"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/background_signup"
