@@ -15,8 +15,8 @@ import java.util.Collections;
 public class Servis extends AppCompatActivity {
 
     ListView lst;
-    String[] nama = {"Tune Up","Regular","paket"};
-    Integer[] imgid={R.drawable.aqi,R.drawable.busi2,R.drawable.kampasrem};
+    String[] nama = {"TUNE UP","REGULAR SERVICE","PAKET SERVICE"};
+    Integer[] imgid={R.drawable.shopping_cart_black_24dp,R.drawable.bike_black_24dp,R.drawable.shop_black};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

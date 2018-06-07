@@ -111,13 +111,13 @@ ImageView gambar;
             switch (getArguments().getInt(ARG_SECTION_NUMBER))
             {
                 case 1:
-                    rootView = inflater.inflate(R.layout.fragment_activity_tab_servis, container, false);
+                    rootView = inflater.inflate(R.layout.activity_service_paket, container, false);
                     break;
                 case 2:
-                    rootView = inflater.inflate(R.layout.fragment_activity_tab_servis2, container, false);
+                    rootView = inflater.inflate(R.layout.activity_service_regular, container, false);
                     break;
                 case 3:
-                    rootView = inflater.inflate(R.layout.fragment_activity_tab_servis3, container, false);
+                    rootView = inflater.inflate(R.layout.activity_service_tune_up, container, false);
                     break;
             }
             return rootView;

@@ -39,6 +39,7 @@
         android:layout_height="wrap_content"
         android:onClick="submit"
         android:text="simpan"
+        android:textColor="#df546e"
         android:textAllCaps="true"
         android:textSize="16sp"
         android:background="@drawable/background_login"

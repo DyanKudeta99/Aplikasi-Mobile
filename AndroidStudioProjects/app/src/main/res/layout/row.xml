@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center"
+        android:layout_gravity="center"
         android:layout_marginLeft="5dp"
         android:layout_marginStart="5dp">
         <TextView
@@ -24,12 +24,15 @@
             android:textSize="20sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
         <TextView
-            android:id="@+id/mainDesc"
-            android:text="Description"
+            android:id="@+id/mainHarga"
+            android:text="Harga"
+            android:textStyle="bold"
             android:textSize="20sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
     </LinearLayout>
 
 </LinearLayout>
