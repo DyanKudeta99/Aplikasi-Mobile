@@ -2,14 +2,16 @@
 class tservice extends CI_Controller{
 	function __construct(){
 		parent::__construct();		
-		$this->load->model('m_tservice');
 		$this->load->helper(array('url','form'));
  
 	}
  
 	function index(){
+		$this->load->model('m_tservice');
 		$data['harga_service'] = $this->m_tservice->tampil_data()->result();
+		$this->load->view('template', $data);
 		$this->load->view('v_tservice',$data);
+		$this->load->view('template_foot');
 	}
  
 	function tambah(){

@@ -14,7 +14,8 @@ class jservice extends CI_Controller{
 				'harga_service' => $query->result(),
 		);
 		$this->load->view('template', $data);
-		$this->load->view('v_jservice');
+		$this->load->view('v_jservice', $data);
+		$this->load->view('template_foot');
 	}
 		
 	function tambahdata() {
@@ -23,7 +24,9 @@ class jservice extends CI_Controller{
             $this->m_jservice->tambah();
             redirect('jservice/index');
         }
+		$this->load->view('template');
         $this->load->view('v_tservice');
+		$this->load->view('template_foot');
     }
 }
 ?>

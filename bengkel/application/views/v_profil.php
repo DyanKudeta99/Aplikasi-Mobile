@@ -1,4 +1,4 @@
-<title><?=$template; ?></title>
+
 		<style type="text/css">
 				table.data {
 		border-collapse: collapse;
@@ -6,11 +6,15 @@
 	}
 	table{
 		width: 40%;
-		margin : -200px 8px 0 500px;
+		margin : auto;
+		margin-top : 5%;
 	}
 	table.data th, table.data td {
 		padding: 10px;
 		align: center;
+	}
+	table.data td{
+	background-color : white;
 	}
 </style>
 			<table class="data" border="3">

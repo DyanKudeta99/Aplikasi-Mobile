@@ -5,12 +5,16 @@
 		align: center;
 	}
 	table{
-		width: 50%;
-		margin : -300px 8px 0 450px;
+		width: 40%;
+		margin : auto;
+		margin-top : 5%;
 	}
 	table.data th, table.data td {
 		padding: 10px;
 		align: center;
+	}
+	table.data td{
+	background-color : white;
 	}
 </style>
 			<table class="data" border="3">

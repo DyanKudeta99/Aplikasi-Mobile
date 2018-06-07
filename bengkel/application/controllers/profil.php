@@ -13,7 +13,8 @@ class profil extends CI_Controller{
 				'admin' => $query->result(),
 		);
 		$this->load->view('template', $data);
-		$this->load->view('v_profil');
+		$this->load->view('v_profil', $data);
+		$this->load->view('template_foot');
 	}
 
 	function editdata() {

@@ -1,20 +1,24 @@
-<title><?=$header; ?></title>
+<title><?=$template; ?></title>
 		<style type="text/css">
 				p.data {
 		border-collapse: collapse;
 		align: center;
 	}
-	p{
-		width: 20%;
-		margin : -300px 8px 0 630px;
+	table{
+		width: 40%;
+		margin : auto;
+		margin-top : 5%;
 	}
-	p.data h, p.data b, p.data input {
+	table.data th, table.data td {
 		padding: 10px;
 		align: center;
 	}
+	table.data td{
+	background-color : white;
+	}
 </style>
-<h3>Tambah Mekanik</h3>
-<table>
+<h3 style="font-size:200%; text-align:center;">Tambah Mekanik</h3>
+<table style="font-size:150%;">
 <?php echo form_open('mekanik/tambahdata'); ?>
 <tr>
     <td> Id Mekanik </td>

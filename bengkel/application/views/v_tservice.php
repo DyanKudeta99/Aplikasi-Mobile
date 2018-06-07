@@ -1,21 +1,27 @@
-<title><?=$header; ?></title>
+<title><?=$template; ?></title>
 		<style type="text/css">
-				p.data {
+				table.data {
 		border-collapse: collapse;
 		align: center;
 	}
-	p{
-		width: 20%;
-		margin : -300px 8px 0 630px;
+	table{
+		width: 50%;
+		margin : auto;
+		margin-top : 5%;
 	}
-	p.data h, p.data b, p.data input {
+	table.data th, table.data td {
 		padding: 10px;
 		align: center;
 	}
+	table.data td{
+	background-color : white;
+	}
+	
 </style>
 
-<h3>Tambah Jenis Service</h3>
-<table>
+<table class="data" border="3" >
+<h3 style="text-align:center; font-size:200%;">Tambah Jenis Service</h3>
+<table style="font-size:150%;">
 <?php echo form_open('jservice/tambahdata'); ?>
 <tr>
     <td> Kode Service </td>
@@ -35,4 +41,4 @@
 </tr>
 </table>
 <?php echo form_close(); ?>
-</form>
+</table>
