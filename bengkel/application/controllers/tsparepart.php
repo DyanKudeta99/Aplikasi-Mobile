@@ -9,7 +9,9 @@ class tsparepart extends CI_Controller{
  
 	function index(){
 		$data['sparepart'] = $this->m_tsparepart->tampil_data()->result();
+		$this->load->view('template',$data);
 		$this->load->view('v_tsparepart',$data);
+		$this->load->view('template_foot');
 	}
  
 	function tambah(){

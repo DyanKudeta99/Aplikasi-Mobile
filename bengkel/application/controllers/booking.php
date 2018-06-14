@@ -13,7 +13,8 @@ class booking extends CI_Controller {
 				'booking' => $query->result(),
 		);
 		$this->load->view('template', $data);
-		$this->load->view('v_booking');
+		$this->load->view('v_booking', $data);
+		$this->load->view('template_foot');
 		
 	}
 }

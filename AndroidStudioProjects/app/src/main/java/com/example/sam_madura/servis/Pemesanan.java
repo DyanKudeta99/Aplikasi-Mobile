@@ -99,8 +99,6 @@ public class Pemesanan extends AppCompatActivity {
 
        // input_Id.setText(id);
         input_Nama.setText(nama);
-        input_Nopol.setText(nopol);
-        input_Jk.setText(jk);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -165,11 +163,11 @@ public class Pemesanan extends AppCompatActivity {
 
                         SharedPreferences.Editor editor = sharedpreferences.edit();
                         editor.putString(TAG_ID_USER, id);
+                        editor.putInt("id_booking", id_booking);
                         editor.putString(TAG_ID, nama);
                         editor.putString(TAG_NOPOL, nopol);
                         editor.putString(TAG_JK, jk);
-
-                        editor.commit();
+                        editor.apply();
 
                         Toast.makeText(getApplicationContext(),
                                 jObj.getString(TAG_MESSAGE), Toast.LENGTH_LONG).show();

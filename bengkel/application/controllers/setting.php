@@ -9,7 +9,9 @@ class setting extends CI_Controller{
  
 	function index(){
 		$data['admin'] = $this->m_setting->tampil_data()->result();
+		$this->load->view('template', $data);
 		$this->load->view('v_setting',$data);
+		$this->load->view('template_foot');
 	}
  
 	function tambah(){

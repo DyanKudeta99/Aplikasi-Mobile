@@ -14,7 +14,8 @@ class Mekanik extends CI_Controller{
 				'mekanik' => $query->result(),
 		);
 		$this->load->view('template', $data);
-		$this->load->view('view_mekanik');
+		$this->load->view('view_mekanik', $data);
+		$this->load->view('template_foot');
 	}
 		
 	function tambahdata() {
@@ -23,7 +24,9 @@ class Mekanik extends CI_Controller{
             $this->Model_mekanik->tambah();
             redirect('Mekanik/index');
         }
+		$this->load->view('template');
         $this->load->view('v_tmekanik');
+		$this->load->view('template_foot');
     }
 }
 ?>

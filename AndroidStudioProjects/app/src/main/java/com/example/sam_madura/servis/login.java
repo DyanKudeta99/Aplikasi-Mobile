@@ -187,7 +187,7 @@ public class login extends AppCompatActivity {
                        editor.putString(TAG_EMAIL, email);
                        editor.putString(TAG_ALAMAT, alamat);
                         editor.putString(TAG_NOHP, nohp);
-                        editor.commit();
+                        editor.apply();
 
                         // Memanggil main activity
                         Intent intent = new Intent(login.this, ActivityHome.class);

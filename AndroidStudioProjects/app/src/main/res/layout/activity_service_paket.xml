@@ -15,14 +15,13 @@
         tools:layout_editor_absoluteX="0dp">
 
         <TextView
-            android:id="@+id/text5"
+            android:id="@+id/tvserviceP"
             android:layout_width="395dp"
             android:layout_height="47dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:text="Service Paket"
             android:textAlignment="center"
-
             android:textSize="30dp"
             android:textStyle="bold"
 
@@ -42,9 +41,10 @@
             android:layout_gravity="right">
 
             <TextView
+                android:id="@+id/tvhargaP"
                 android:layout_width="100sp"
                 android:layout_height="wrap_content"
-                android:text="Rp. 70.000"
+                android:text="Rp. 90.000"
                 android:textStyle="bold"
                 android:textColor="@color/hitam"/>
         </RelativeLayout>
@@ -55,11 +55,13 @@
 
            <Button
                android:id="@+id/btnpaket"
+               android:onClick="service"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:background="@drawable/background_signup"
                android:gravity="center"
-               android:text="Button" />
+               android:textColor="@color/lightgray"
+               android:text="SERVICES" />
        </RelativeLayout>
     </LinearLayout>
 

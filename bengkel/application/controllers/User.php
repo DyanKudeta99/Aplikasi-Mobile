@@ -14,6 +14,7 @@ class User extends CI_Controller{
 		);
 		$this->load->view('template', $data);
 		$this->load->view('view_user');
+		$this->load->view('template_foot');
 		}
 	}
 ?>

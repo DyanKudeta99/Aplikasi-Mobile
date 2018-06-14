@@ -114,12 +114,13 @@
 
         <EditText
             android:id="@+id/noHP2"
+            android:maxLength="12"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:enabled="false"
             android:hint="No HP"
-            android:inputType="none"
+
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
             android:textColor="@drawable/edit_text1" />
     </LinearLayout>
@@ -160,7 +161,7 @@
         <Button
             android:id="@+id/btn_ubah"
             android:layout_width="wrap_content"
-            android:layout_height="34dp"
+            android:layout_height="35dp"
             android:layout_marginHorizontal="10dp"
             android:layout_weight="1"
             android:background="@drawable/background_login"
@@ -171,7 +172,7 @@
         <Button
             android:id="@+id/btn_simpan"
             android:layout_width="wrap_content"
-            android:layout_height="34dp"
+            android:layout_height="35dp"
             android:layout_marginHorizontal="10dp"
             android:layout_weight="1"
             android:background="@drawable/background_login"
@@ -191,7 +192,7 @@
         <Button
             android:id="@+id/btn_logout"
             android:layout_width="wrap_content"
-            android:layout_height="33dp"
+            android:layout_height="45dp"
             android:layout_marginHorizontal="10dp"
             android:layout_weight="1"
             android:background="@drawable/background_signup"
