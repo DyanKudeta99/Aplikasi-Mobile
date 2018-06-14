@@ -8,6 +8,13 @@
     android:orientation="vertical"
     tools:context=".Pemesanan">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
 
     <EditText
         android:id="@+id/input_nama"
@@ -33,6 +40,13 @@
         android:hint="Jenis Kendaraan"
         android:inputType="text"
         android:textSize="16sp" />
+    <EditText
+        android:id="@+id/input_keluhan"
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Inputkan keluhan anda jike perlu, jika tidak silahkan pilih paket di menu service"
+        android:textSize="16sp"/>
 
     <Button
         android:id="@+id/simpan_button"
@@ -78,6 +92,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Jenis Kendaraan" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keluhan"/>
 
         </LinearLayout>
 
@@ -101,6 +120,11 @@
                 android:layout_weight="1"
                 android:text=":" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=":" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -135,6 +159,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
+            <TextView
+                android:id="@+id/hasil_keluhan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
 
         </LinearLayout>
 
@@ -164,5 +194,6 @@
 
     </LinearLayout>
 
-
+</LinearLayout>
+    </ScrollView>
 </LinearLayout>

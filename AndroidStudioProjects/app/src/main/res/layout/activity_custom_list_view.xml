@@ -14,21 +14,21 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-<<<<<<< HEAD
+
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/imgview"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_weight="0.11"/>
-=======
+
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center"
         android:layout_marginLeft="5dp"
         android:layout_marginStart="5dp">
 
->>>>>>> 6b67bab1f9e62ea31ec06cb30d0d9393549d4c74
+
         <TextView
             android:id="@+id/textview"
             android:text="Title"

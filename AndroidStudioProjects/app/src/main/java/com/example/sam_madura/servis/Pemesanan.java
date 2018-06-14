@@ -47,20 +47,21 @@ public class Pemesanan extends AppCompatActivity {
 
     private SharedPreferences sharedpreferences;
     private Boolean session = false;
-    private String id, nama,nopol,jk;
+    private String id, nama,nopol,keluhan, jk;
     private ProgressDialog pDialog;
     private String url = server.URL + "pemesanan.php";
     private String TAG;
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_MESSAGE = "message";
     private static final String TAG_NOPOL = "telp";
+    private static final String TAG_KELUHAN = "kel";
     private static final String TAG_JK = "jk";
     private ConnectivityManager conMgr;
     private String tag_json_obj = "json_obj_req";
 
 
-    private EditText inputNama,inputNopol,inputJk;
-    private TextView hasilNama,hasilNik,hasilUmur,hasilAlamat,hasilNopol,hasilJenis;
+    private EditText inputNama,inputNopol,inputJk, inputKeluhan;
+    private TextView hasilNama,hasilNik,hasilUmur,hasilAlamat,hasilNopol,hasilJenis, hasilKeluhan;
 
 
     @BindView(R.id.input_nama)
@@ -69,6 +70,8 @@ public class Pemesanan extends AppCompatActivity {
     EditText input_Nopol;
     @BindView(R.id.input_jk)
     EditText input_Jk;
+    @BindView(R.id.input_keluhan)
+    EditText input_keluhan;
     @BindView(R.id.no_Antrian)EditText antrian;
     @BindView(R.id.simpan_button)
     Button simpan_button;
@@ -80,6 +83,8 @@ public class Pemesanan extends AppCompatActivity {
     TextView hasil_Nopol;
     @BindView(R.id.hasil_jk)
     TextView hasil_Jk;
+    @BindView(R.id.hasil_keluhan)
+    TextView hasil_keluhan;
 
 
     @Override
@@ -95,9 +100,13 @@ public class Pemesanan extends AppCompatActivity {
         id = sharedpreferences.getString(TAG_ID_USER, null);
         nama = sharedpreferences.getString(TAG_ID, null);
         nopol = sharedpreferences.getString(TAG_NOPOL, null);
+        keluhan =sharedpreferences.getString(TAG_KELUHAN, null);
         jk = sharedpreferences.getString(TAG_JK, null);
 
        // input_Id.setText(id);
+
+
+
         input_Nama.setText(nama);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -116,11 +125,14 @@ public class Pemesanan extends AppCompatActivity {
             hasil_Nopol.setText(nopol);
             String jk = input_Jk.getText().toString();
             hasil_Jk.setText(jk);
+            String keluhan = input_keluhan.getText().toString();
+            hasil_keluhan.setText(keluhan);
+
 
         if (conMgr.getActiveNetworkInfo() != null
                 && conMgr.getActiveNetworkInfo().isAvailable()
                 && conMgr.getActiveNetworkInfo().isConnected()) {
-            konek(id,nama,nopol,jk);
+            konek(id,nama,nopol,jk,keluhan);
 
 
         } else {
@@ -136,7 +148,7 @@ public class Pemesanan extends AppCompatActivity {
         if (pDialog.isShowing())
             pDialog.dismiss();
     }
-    private void konek (final String id, final String nama, final String nopol, final String jk) {
+    private void konek(String s, final String id, final String nama, final String nopol, final String jk) {
         pDialog = new ProgressDialog(this);
         pDialog.setCancelable(false);
         pDialog.setMessage("Sedang menyimpan ...");
@@ -166,6 +178,7 @@ public class Pemesanan extends AppCompatActivity {
                         editor.putInt("id_booking", id_booking);
                         editor.putString(TAG_ID, nama);
                         editor.putString(TAG_NOPOL, nopol);
+                        editor.putString(TAG_KELUHAN, keluhan);
                         editor.putString(TAG_JK, jk);
                         editor.apply();
 
@@ -207,6 +220,7 @@ public class Pemesanan extends AppCompatActivity {
                 params.put("id", id);
                 params.put("nama", nama);
                 params.put("nopol", nopol);
+                params.put("keluhan", keluhan);
                 params.put("jk", jk);
 
                 return params;
