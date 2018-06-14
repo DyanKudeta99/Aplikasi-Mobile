@@ -148,7 +148,7 @@ public class Pemesanan extends AppCompatActivity {
         if (pDialog.isShowing())
             pDialog.dismiss();
     }
-    private void konek(String s, final String id, final String nama, final String nopol, final String jk) {
+    private void konek(final String keluhan, final String id, final String nama, final String nopol, final String jk) {
         pDialog = new ProgressDialog(this);
         pDialog.setCancelable(false);
         pDialog.setMessage("Sedang menyimpan ...");
